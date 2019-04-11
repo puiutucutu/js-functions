@@ -1,4 +1,4 @@
-// from Javascript Allonge, pg 66
+// from Javascript Allonge, pg 48
 function maybe(f) {
   return function() {
     var i;
