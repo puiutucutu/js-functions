@@ -1,6 +1,6 @@
 /**
- *
  * @param {Array} items
+ * @return {Array} The arrays of arrays reduced to a 1-d array
  */
 const flatten = items =>
   items.reduce(
