@@ -1,21 +1,26 @@
+//
 // from Javascript Allonge, pg 48
-function maybe(f) {
-  return function() {
-    var i;
-    if (arguments.length === 0) {
-      return;
-    } else {
-      for (i = 0; i < arguments.length; ++i) {
-        if (arguments[i] == null) {
-          return;
-        }
-        return fn.apply(this, arguments);
-      }
-    }
-  };
-}
+//
+// function maybe(f) {
+//   return function() {
+//     var i;
+//     if (arguments.length === 0) {
+//       return;
+//     } else {
+//       for (i = 0; i < arguments.length; ++i) {
+//         if (arguments[i] == null) {
+//           return;
+//         }
+//         return fn.apply(this, arguments);
+//       }
+//     }
+//   };
+// }
 
-// es6 rewrite
+/**
+ * @param {function} f
+ * @return {function(...[*]): *}
+ */
 const maybe = f => (...args) => {
   const argsLen = args.length;
   if (argsLen === 0) {
