@@ -5,3 +5,5 @@ import { splitByDelimiter } from "./splitByDelimiter";
  * @return {String[]}
  */
 const splitByComma = text => splitByDelimiter(/,/g)(text);
+
+export { splitByComma }

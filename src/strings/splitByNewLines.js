@@ -5,3 +5,5 @@ import { splitByDelimiter } from "./splitByDelimiter";
  * @return {String[]}
  */
 const splitByNewLines = text => splitByDelimiter(/\r\n|\n/g)(text);
+
+export { splitByNewLines}
