@@ -8,5 +8,11 @@ function mapAlternate(items) {
     return mapped;
   }
 }
-
+                          
+function map(items) {
+  return function(mapper) {
+    return Array.prototype.map.call(items, mapper);
+  }
+}
+                          
 export { mapAlternate }
