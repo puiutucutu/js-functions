@@ -30,3 +30,5 @@ const maybe = f => (...args) => {
 
   return f(...args);
 };
+
+export { maybe };
