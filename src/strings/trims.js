@@ -1,9 +1,11 @@
 import { trim } from "./trim";
+import { pipe } from "../pipe";
+import { map } from "./map";
 
 /**
- * @param {String[]} items
- * @return {String[]}
+ * @param {String[]}
+ * @return {function(String[]): String[]}
  */
-const trims = items => items.map(trim);
+const trims = pipe(map(trim));
 
-export { trims } 
+export { trims };
