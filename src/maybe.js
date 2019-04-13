@@ -28,5 +28,5 @@ const maybe = f => (...args) => {
     }
   }
 
-  return fn(...args);
+  return f(...args);
 };
