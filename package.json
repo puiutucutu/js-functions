@@ -4,7 +4,7 @@
   "description": "just a place to store functions",
   "main": "index.js",
   "scripts": {
-    "test": "tape -r @babel/register src/**/*.js | tap-spec",
+    "test": "tape -r @babel/register tests/**/*.js | tap-spec",
     "prettify": "prettier --write src/**/*.js"
   },
   "repository": {
