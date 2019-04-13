@@ -6,4 +6,4 @@
  */
 const joinWithDelimiter = delimiter => items => items.join(delimiter);
 
-export { joinWithDelimiter } 
+export { joinWithDelimiter };

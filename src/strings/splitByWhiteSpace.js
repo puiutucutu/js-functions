@@ -6,4 +6,4 @@ import { splitByDelimiter } from "./splitByDelimiter";
  */
 const splitByWhiteSpace = text => splitByDelimiter(/\s/g)(text);
 
-export { splitByWhiteSpace}
+export { splitByWhiteSpace };

@@ -4,4 +4,4 @@
  */
 const trim = str => str.trim();
 
-export { trim }
+export { trim };

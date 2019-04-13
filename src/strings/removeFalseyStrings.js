@@ -4,4 +4,4 @@
  */
 const removeFalseyStrings = texts => texts.filter(el => !!el);
 
-export { removeFalseyStrings }
+export { removeFalseyStrings };

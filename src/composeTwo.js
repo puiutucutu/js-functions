@@ -5,4 +5,4 @@
  */
 const composeTwo = (f, g) => x => g(f(x));
 
-export { composeTwo}
+export { composeTwo };

@@ -6,4 +6,4 @@ import { splitByDelimiter } from "./splitByDelimiter";
  */
 const splitByNewLines = text => splitByDelimiter(/\r\n|\n/g)(text);
 
-export { splitByNewLines}
+export { splitByNewLines };

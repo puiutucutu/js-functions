@@ -29,4 +29,4 @@ const maybe = f => (...args) => {
   }
 
   return fn(...args);
-}
+};

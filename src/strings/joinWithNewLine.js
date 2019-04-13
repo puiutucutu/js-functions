@@ -4,4 +4,4 @@
  */
 const joinWithNewLine = items => items.join("\r\n");
 
-export { joinWithNewLine }
+export { joinWithNewLine };

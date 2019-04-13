@@ -6,4 +6,4 @@ import { splitByDelimiter } from "./splitByDelimiter";
  */
 const splitByComma = text => splitByDelimiter(/,/g)(text);
 
-export { splitByComma }
+export { splitByComma };

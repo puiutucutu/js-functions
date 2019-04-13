@@ -4,4 +4,4 @@
  */
 const joinWithComma = items => items.join(",");
 
-export { joinWithComma }
+export { joinWithComma };
