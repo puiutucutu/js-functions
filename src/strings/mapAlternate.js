@@ -3,7 +3,9 @@ function mapAlternate(items) {
     let len = items.length
     const mapped = [];
     for (let i = 0; i < len; i++) {
-      mapped.push(mapper([items[i]));
+      let currItem = items[i]
+      let mapped = mapper(currItem)
+      mapped.push(mapped);
     }
     return mapped;
   }
