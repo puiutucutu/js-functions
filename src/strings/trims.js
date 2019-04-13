@@ -1,3 +1,5 @@
+import { trim } from "./trim";
+
 /**
  * @param {String[]} items
  * @return {String[]}
