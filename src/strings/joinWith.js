@@ -4,6 +4,6 @@
  * @param {String|RegExp} delimiter
  * @return {function(text: String[]): String}
  */
-const joinWithDelimiter = delimiter => items => items.join(delimiter);
+const joinWith = delimiter => items => items.join(delimiter);
 
-export { joinWithDelimiter };
+export { joinWith };

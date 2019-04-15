@@ -1,5 +1,5 @@
 import { joinWithComma } from "./joinWithComma";
-import { joinWithDelimiter } from "./joinWithDelimiter";
+import { joinWith } from "./joinWith";
 import { joinWithNewLine } from "./joinWithNewLine";
 import { map } from "./map";
 import { removeCommas } from "./removeCommas";
@@ -13,7 +13,7 @@ import { trims } from "./trims";
 
 export {
   joinWithComma,
-  joinWithDelimiter,
+  joinWith,
   joinWithNewLine,
   map,
   removeCommas,
