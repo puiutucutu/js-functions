@@ -3,6 +3,6 @@
  * @param {Function} g
  * @return {Function}
  */
-const composeTwo = (f, g) => x => f(g(x));
+const compose = (f, g) => x => f(g(x));
 
-export { composeTwo };
+export { compose };
