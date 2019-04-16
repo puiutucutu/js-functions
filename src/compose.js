@@ -1,7 +1,7 @@
 /**
  * @param {Function} f
  * @param {Function} g
- * @return {Function}
+ * @return {function(*): *}
  */
 const compose = (f, g) => x => f(g(x));
 
