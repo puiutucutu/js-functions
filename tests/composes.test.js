@@ -1,8 +1,8 @@
 import test from "tape";
-import { compose } from "../src";
+import { composes } from "../src";
 
-test("`compose` returns a function on first call", function(assert) {
-  const fnCall = compose(() => {});
+test("`composes` returns a function on first call", function(assert) {
+  const fnCall = composes(() => {});
   const actual = Object.prototype.toString.call(fnCall);
   const expected = "[object Function]";
 
