@@ -1,11 +1,19 @@
 import test from "tape";
 import { composes } from "../src";
 
-test("`composes` returns a function on first call", function(assert) {
-  const fnCall = composes(() => {});
-  const actual = Object.prototype.toString.call(fnCall);
-  const expected = "[object Function]";
+test("testing `composes` fn", function(t) {
+  let fnCall, actual, expected;
 
-  assert.equal(actual, expected);
-  assert.end();
+  fnCall = composes(() => {});
+  actual = Object.prototype.toString.call(fnCall);
+  expected = "[object Function]";
+  t.equal(actual, expected, "`composes` returns a function on first call");
+
+  const addsFive = a => a + 5;
+  const multipliesBySix = a => a * 6;
+  actual = composes(addsFive, multipliesBySix)(2);
+  expected = 17;
+  t.equal(actual, expected, "returns the expected value on final invocation");
+
+  t.end();
 });
