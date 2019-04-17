@@ -2,9 +2,9 @@ import test from "tape";
 import { compose } from "../src";
 
 test("testing `compose` fn", function(t) {
-  let fnCall, actual, expected;
+  let actual, expected;
 
-  fnCall = compose(
+  const fnCall = compose(
     () => {},
     () => {}
   );
