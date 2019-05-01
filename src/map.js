@@ -1,5 +1,5 @@
 /**
- * @param {function(*): *} mapper
+ * @param {function(*): *} f
  * @return {function([]): []}
  */
 const map = f => x => x.map(f);
