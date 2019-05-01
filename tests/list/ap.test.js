@@ -8,6 +8,6 @@ test("`ap` returns expected value", function(t) {
   const actual = ap(double, addOne)([1, 2, 3]);
   const expected = [3, 5, 7];
 
-  t.equal(actual, expected);
+  t.deepEqual(actual, expected);
   t.end();
 });
