@@ -1,12 +1,27 @@
+/**
+ * @param {function(*): *} mapper
+ * @return {function([]): []}
+ */
 const map = f => x => x.map(f);
 
+/**
+ * @param {function(*): *} mapper
+ * @return {function([]): []}
+ */
+const mapApply = mapper => mappable =>
+  Array.prototype.map.call(mappable, mapper);
+
+/**
+ * @param {Array} items
+ * @return {function(f: Function): f([])}
+ */
 const mapReimplementation = f => x => {
   const len = x.length;
-  const out = [];
+  const mapped = [];
   for (let i = 0; i < len; i++) {
-    out.push(f(x[i]));
+    mapped.push(f(x[i]));
   }
-  return out;
+  return mapped;
 };
 
 export { map };
