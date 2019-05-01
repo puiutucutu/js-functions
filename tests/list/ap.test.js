@@ -1,5 +1,5 @@
 import test from "tape";
-import { ap } from "../src/list";
+import { ap } from "../../src/list";
 
 test("`ap` returns expected value", function(t) {
   const double = x => x * 2;
