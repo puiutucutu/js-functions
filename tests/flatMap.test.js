@@ -1,10 +1,13 @@
 import test from "tape";
 import { flatMap } from "../src";
 
-const nums = [1, 2, 3];
-const origWithDouble = x => [x, x + 1];
+test("`flatMap` returns expected value", function(assert) {
+  const nums = [1, 2, 3];
+  const origWithDouble = x => [x, x + 1];
 
-// @todo implement test
+  const actual = flatMap(origWithDouble)(nums);
+  const expected = [1, 2, 2, 3, 3, 4];
 
-const flattened = flatMap(origWithDouble)(nums);
-console.log("Flattened | ", flattened);
+  assert.deepEqual(actual, expected);
+  assert.end();
+});
