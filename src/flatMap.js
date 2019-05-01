@@ -10,6 +10,6 @@ flatMapEx = f => x => [].concat(...map(f)(x));
 flatMapEx = f => x => [].concat(...x.map(f));
 
 // actual definition used
-const flatMap = f => x => [].concat(...map(f)(x));
+const flatMap = f => x => [].concat(...x.map(f));
 
 export { flatMap };
