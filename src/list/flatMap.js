@@ -11,7 +11,7 @@ flatMapEx = f => x => Array.prototype.concat.apply([], x.map(f));
 flatMapEx = f => x => [].concat(...map(f)(x));
 flatMapEx = f => x => [].concat(...x.map(f));
 
-// implemented using lib fns
+// implemented using own lib fns
 flatMapEx = f => x => flatten(map(f)(x));
 flatMapEx = f => x =>
   compose(
