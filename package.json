@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tape -r @babel/register tests/**/*.js | tap-spec",
+    "test:watch": "nodemon --watch src --watch tests -x \"npm run test\"",
     "prettify": "prettier --write src/**/*.js"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
+    "nodemon": "^1.19.0",
     "prettier": "^1.17.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
