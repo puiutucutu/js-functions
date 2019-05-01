@@ -3,7 +3,6 @@ import { flatten } from "../src";
 
 test("`flatten` returns expected value", function(assert) {
   const actual = [[1, 2, 3], [4, 5, 6]];
-
   const expected = [1, 2, 3, 4, 5, 6];
 
   assert.deepEqual(flatten(actual), expected);
