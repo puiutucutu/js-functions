@@ -1,4 +1,6 @@
 import { map } from "./map";
+import { flatten } from "./flatten";
+import { compose } from "./compose";
 
 // different implementations
 let flatMapEx;
@@ -9,7 +11,13 @@ flatMapEx = f => x => Array.prototype.concat.apply([], x.map(f));
 flatMapEx = f => x => [].concat(...map(f)(x));
 flatMapEx = f => x => [].concat(...x.map(f));
 
-// actual definition used
+// implemented using lib fns
+flatMapEx = f => x => flatten(map(f)(x));
+flatMapEx = f => x =>
+  compose(
+    flatten,
+    map(f)
+  )(x);
 
 /**
  * @param {function(*): *} f
