@@ -5,12 +5,6 @@
 const map = f => x => x.map(f);
 
 /**
- * @param {function(*): *} mapper
- * @return {function(x: *[]): *[]}
- */
-const mapCall = mapper => mappable => Array.prototype.map.call(mappable, mapper);
-
-/**
  * @param {function(*): *} f
  * @return {function(x: *[]): *[]}
  */
