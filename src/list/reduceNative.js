@@ -1,8 +1,8 @@
 /**
- * @param {function(acc: *, cur: *, idx: number, src: *[])} reducer
- * @return {function(items: *[]): function(initialValue: T): (T | *)}
+ * @param {*} initialValue
+ * @return {function(acc: *, cur: *, idx: number, src: *[])} : function(items: T[]): T[]}
  */
-const reduceNative = reducer => items => initialValue =>
+const reduceNative = initialValue => reducer => items =>
   Array.prototype.reduce.call(items, reducer, initialValue);
 
 export { reduceNative };
