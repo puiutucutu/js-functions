@@ -8,8 +8,7 @@ const map = f => x => x.map(f);
  * @param {function(*): *} mapper
  * @return {function([]): []}
  */
-const mapApply = mapper => mappable =>
-  Array.prototype.map.call(mappable, mapper);
+const mapApply = mapper => mappable => Array.prototype.map.call(mappable, mapper);
 
 /**
  * @param {Array} items
