@@ -1,5 +1,5 @@
 import test from "tape";
-import { flatten } from "../src";
+import { flatten } from "../src/list/flatten";
 
 test("`flatten` function", function(assert) {
   assert.deepEqual(

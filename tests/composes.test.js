@@ -1,5 +1,5 @@
 import test from "tape";
-import { composes } from "../src";
+import { composes } from "../src/list/composes";
 
 test("testing `composes` fn", function(t) {
   let fnCall, actual, expected;

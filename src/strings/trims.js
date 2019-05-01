@@ -1,5 +1,5 @@
 import { trim } from "./trim";
-import { map } from "../map";
+import { map } from "../list/map";
 
 /**
  * @param {String[]} toTrim
