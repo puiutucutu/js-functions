@@ -1,7 +1,9 @@
+import { replace } from "./replace";
+
 /**
- * @param {String} text
+ * @param {String} s
  * @return {String}
  */
-const removeCommas = text => text.replace(/,/g, "");
+const removeCommas = s => replace (/,/gi) (s) ("");
 
 export { removeCommas };

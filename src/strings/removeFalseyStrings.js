@@ -1,7 +1,9 @@
+import { filterNative } from "./filterNative";
+
 /**
- * @param {String[]} texts
- * @return {String[]}
+ * @param {String[]} n
+ * @return {T[]}
  */
-const removeFalseyStrings = texts => texts.filter(el => !!el);
+const removeFalseyStrings = n => filterNative(el => !!el)(n);
 
 export { removeFalseyStrings };

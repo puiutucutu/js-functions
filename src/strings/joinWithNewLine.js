@@ -1,9 +1,9 @@
 import { join } from "./join";
 
 /**
- * @param {String|Number[]} x
+ * @param {String[]|Number[]} n
  * @return {String}
  */
-const joinWithNewLine = x => join ("\r\n") (x)
+const joinWithNewLine = n => join ("\r\n") (n)
 
 export { joinWithNewLine };

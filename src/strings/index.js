@@ -1,5 +1,6 @@
 export { collapseToSingleSpace } from "./collapseToSingleSpace";
 export { collapseWhitespace } from "./collapseWhitespace";
+export { filterNative } from "./filterNative";
 export { join } from "./join";
 export { joinWithComma } from "./joinWithComma";
 export { joinWithNewLine } from "./joinWithNewLine";
