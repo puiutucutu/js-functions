@@ -1,4 +1,4 @@
-import { filterNative } from "./filterNative";
+import { filterNative } from "../list/filterNative";
 
 /**
  * @param {String[]} n

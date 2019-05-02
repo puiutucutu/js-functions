@@ -1,23 +1,11 @@
-import { ap } from "./ap";
-import { compose } from "./compose";
-import { composes } from "./composes";
-import { flatMap } from "./flatMap";
-import { flatten } from "./flatten";
-import { map } from "./map";
-import { mapNative } from "./mapNative";
-import { pipe } from "./pipe";
-import { reduce } from "./reduce";
-import { reduceNative } from "./reduceNative";
-
-export {
-  ap,
-  compose,
-  composes,
-  flatMap,
-  flatten,
-  map,
-  mapNative,
-  pipe,
-  reduce,
-  reduceNative
-};
+export { ap } from "./ap";
+export { compose } from "./compose";
+export { composes } from "./composes";
+export { filterNative } from "./filterNative";
+export { flatMap } from "./flatMap";
+export { flatten } from "./flatten";
+export { map } from "./map";
+export { mapNative } from "./mapNative";
+export { pipe } from "./pipe";
+export { reduce } from "./reduce";
+export { reduceNative } from "./reduceNative";
