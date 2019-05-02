@@ -1,15 +1,9 @@
-import { getObjectType } from "./getObjectType";
-import { hasOwnProperty } from "./hasOwnProperty";
-import { isArray } from "./isArray";
-import { isEmptyObject } from "./isEmptyObject";
-import { isNumeric } from "./isNumeric";
-import { isString } from "./isString";
-
-export {
-  getObjectType,
-  hasOwnProperty,
-  isArray,
-  isEmptyObject,
-  isNumeric,
-  isString
-};
+export { getObjectType } from "./getObjectType";
+export { hasOwnProperty } from "./hasOwnProperty";
+export { isArray } from "./isArray";
+export { isEmptyObject } from "./isEmptyObject";
+export { isEmptySet } from "./isEmptySet";
+export { isEmptyString } from "./isEmptyString";
+export { isNumeric } from "./isNumeric";
+export { isString } from "./isString";
+export { isTimeValid } from "./isTimeValid";
