@@ -1,9 +1,9 @@
 /**
- * @param {*} n
+ * @param {*} x
  * @return {string}
  */
 function getObjectType(n) {
-  return Object.prototype.toString.call(n);
+  return Object.prototype.toString.call(x);
 }
 
 export { getObjectType };
