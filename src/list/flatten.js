@@ -1,4 +1,10 @@
 /**
+ * @param args
+ * @return {*[]}
+ */
+const concat = (...args) => Array.prototype.concat(...args);
+
+/**
  * Recursively flattens an array of items of varying arities into an array
  * with an arity of one.
  *
@@ -11,7 +17,20 @@ const flatten = items =>
     []
   );
 
-const flattenAlt = array =>
-  Array.isArray(array) ? [].concat(...array.map(flattenAlt)) : array;
+const flattenAlternateSimple = arr => [].concat(...arr);
+
+const flattenAlternateSimpleRecursive = arr =>
+  Array.isArray(arr)
+    ? [].concat(...arr.map(flattenAlternateSimpleRecursive))
+    : [...arr];
+
+const flattenAlternateSimpleRecursiveTwo = arr =>
+  [].concat(
+    ...arr.map(element =>
+      Array.isArray(element)
+        ? flattenAlternateSimpleRecursiveTwo(element)
+        : element
+    )
+  );
 
 export { flatten };
