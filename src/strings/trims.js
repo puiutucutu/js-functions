@@ -2,9 +2,9 @@ import { trim } from "./trim";
 import { map } from "../list/map";
 
 /**
- * @param {String[]} toTrim
+ * @param {String[]} s
  * @return {String[]}
  */
-const trims = toTrim => map(trim)(toTrim);
+const trims = s => map(trim)(s);
 
 export { trims };
