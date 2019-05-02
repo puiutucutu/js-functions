@@ -1,3 +1,6 @@
+export { collapseToSingleSpace } from "./collapseToSingleSpace";
+export { collapseWhitespace } from "./collapseWhitespace";
+export { join } from "./join";
 export { joinWithComma } from "./joinWithComma";
 export { joinWithNewLine } from "./joinWithNewLine";
 export { removeCommas } from "./removeCommas";
@@ -6,5 +9,6 @@ export { splitBy } from "./splitBy";
 export { splitByComma } from "./splitByComma";
 export { splitByNewLines } from "./splitByNewLines";
 export { splitByWhiteSpace } from "./splitByWhiteSpace";
+export { svgToBase64 } from "./svgToBase64";
 export { trim } from "./trim";
 export { trims } from "./trims";
