@@ -1,3 +1,9 @@
-const collapseToSingleSpace = s => String.prototype.replace.call(s, /\s+/gi, " ");
+import { replace } from "./replace";
 
-export { collapseToSingleSpace }
+/**
+ * @param {String} s
+ * @return {String}
+ */
+const collapseToSingleSpace = s => replace(/\s+/gi) (" ") (s);
+
+export { collapseToSingleSpace };

@@ -1,3 +1,9 @@
-const collapseWhitespace = s => String.prototype.replace.call(s, /\s+/gi, "");
+import { replace } from "./replace";
 
-export { collapseWhitespace }
+/**
+ * @param {String} s
+ * @return {String}
+ */
+const collapseWhitespace = s => replace(/\s+/gi) ("") (s);
+
+export { collapseWhitespace };

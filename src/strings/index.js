@@ -3,6 +3,7 @@ export { collapseWhitespace } from "./collapseWhitespace";
 export { join } from "./join";
 export { joinWithComma } from "./joinWithComma";
 export { joinWithNewLine } from "./joinWithNewLine";
+export { replace } from "./replace";
 export { removeCommas } from "./removeCommas";
 export { removeFalseyStrings } from "./removeFalseyStrings";
 export { splitBy } from "./splitBy";
