@@ -1,5 +1,3 @@
-import * as strings from "./strings";
-import * as list from "./list";
-import { maybe } from "./maybe";
-
-export { strings, list, maybe };
+export * as list from "./list";
+export * as primitive from "./primitive";
+export * as strings from "./strings";
