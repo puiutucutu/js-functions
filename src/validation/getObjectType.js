@@ -1,6 +1,6 @@
 /**
  * @param {*} x
- * @return {string}
+ * @return {String}
  */
 function getObjectType(n) {
   return Object.prototype.toString.call(x);
