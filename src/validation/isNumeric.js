@@ -12,4 +12,7 @@ function isNumericAlternate(val) {
   return Number(parseFloat(val)) == val
 }
 
+// @todo investigate
+const isNumerical = n => !isNaN(parseFloat(n)) && isFinite(n);
+
 export { isNumeric };
