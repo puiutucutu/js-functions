@@ -2,6 +2,6 @@
  * @param {String} str
  * @return {String}
  */
-const trim = str => str.trim();
+const trim = s => String.prototype.trim.call(s);
 
 export { trim };
