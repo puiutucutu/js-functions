@@ -8,4 +8,8 @@ function isNumeric(n) {
   return getObjectType(n) === "[object Number]";
 }
 
+function isNumericAlternate(val) {
+  return Number(parseFloat(val)) == val
+}
+
 export { isNumeric };
