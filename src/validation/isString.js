@@ -1,11 +1,11 @@
 import { getObjectType } from "./getObjectType";
 
 /**
- * @param {*} n
+ * @param {*} s
  * @return {Boolean}
  */
-function isString(n) {
-  return getObjectType(n) === "[object String]";
+function isString(s) {
+  return getObjectType(s) === "[object String]";
 }
 
 export { isString };
