@@ -1,5 +1,4 @@
 import { joinWithComma } from "./joinWithComma";
-import { joinWith } from "./joinWith";
 import { joinWithNewLine } from "./joinWithNewLine";
 import { removeCommas } from "./removeCommas";
 import { removeFalseyStrings } from "./removeFalseyStrings";
@@ -12,7 +11,6 @@ import { trims } from "./trims";
 
 export {
   joinWithComma,
-  joinWith,
   joinWithNewLine,
   removeCommas,
   removeFalseyStrings,
