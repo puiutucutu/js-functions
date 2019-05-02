@@ -17,19 +17,16 @@ const flatten = items =>
  */
 const concat = (...args) => Array.prototype.concat(...args);
 
-const flattenAlternateSimple = arr => [].concat(...arr);
+const flattenConcatES6 = arrays => [].concat(...arrays);
+const flattenConcatES5 = arrays => [].concat.apply([], arrays);
 
-const flattenAlternateSimpleRecursive = arr =>
-  Array.isArray(arr)
-    ? [].concat(...arr.map(flattenAlternateSimpleRecursive))
-    : [...arr];
+const flattenRecursiveES6 = arr =>
+  Array.isArray(arr) ? [].concat(...arr.map(flattenRecursiveES6)) : [...arr];
 
-const flattenAlternateSimpleRecursiveTwo = arr =>
+const flattenRecursiveAlternateES6 = arr =>
   [].concat(
-    ...arr.map(element =>
-      Array.isArray(element)
-        ? flattenAlternateSimpleRecursiveTwo(element)
-        : element
+    ...arr.map(el =>
+      Array.isArray(el) ? flattenRecursiveAlternateES6(el) : el
     )
   );
 
