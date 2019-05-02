@@ -4,6 +4,6 @@ import { splitBy } from "./splitBy";
  * @param {String} s
  * @return {String[]}
  */
-const splitByWhiteSpace = s => splitByDelimiter (/\s/g) (s);
+const splitByWhiteSpace = s => splitBy (/\s/g) (s);
 
 export { splitByWhiteSpace };
