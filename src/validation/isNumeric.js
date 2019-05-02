@@ -1,12 +1,14 @@
 import { getObjectType } from "./getObjectType";
 
 /**
- * @param {*} n
+ * @param {*} x
  * @return {Boolean}
  */
-function isNumeric(n) {
-  return getObjectType(n) === "[object Number]";
+function isNumeric(x) {
+  return getObjectType(x) === "[object Number]";
 }
+
+export { isNumeric };
 
 function isNumericAlternate(val) {
   return Number(parseFloat(val)) == val
@@ -14,5 +16,3 @@ function isNumericAlternate(val) {
 
 // @todo investigate
 const isNumerical = n => !isNaN(parseFloat(n)) && isFinite(n);
-
-export { isNumeric };
