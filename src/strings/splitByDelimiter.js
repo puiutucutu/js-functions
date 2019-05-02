@@ -2,8 +2,8 @@
  * Abstract generic text splitting function.
  *
  * @param {String|RegExp} delimiter
- * @return {function(text: String): String[]}
+ * @return {function(s: String): String[]}
  */
-const splitByDelimiter = delimiter => text => text.split(delimiter);
+const splitBy = delimiter => s => String.prototype.split.call(s, delimiter);
 
-export { splitByDelimiter };
+export { splitBy };
