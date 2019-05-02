@@ -1,11 +1,9 @@
 import { join } from "./join";
 
 /**
- * Abstract generic text splitting function.
- *
  * @param {String} delimiter
- * @return {function(text: String[]): String}
+ * @return {function(n: String|Number[]): String}
  */
-const joinWith = delimiter => items => join (delimiter) (items);
+const joinWith = delimiter => n => join (delimiter) (n);
 
 export { joinWith };
