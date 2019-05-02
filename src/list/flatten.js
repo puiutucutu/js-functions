@@ -12,6 +12,6 @@ const flatten = items =>
   );
 
 const flattenAlt = array =>
-  Array.isArray(array) ? [].concat(...array.map(flatten)) : array;
+  Array.isArray(array) ? [].concat(...array.map(flattenAlt)) : array;
 
 export { flatten };
