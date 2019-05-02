@@ -11,5 +11,11 @@ test("`collapseWhitespace` fn", function(assert) {
     "returns expected value"
   );
 
+  assert.deepEqual(
+    collapseWhitespace("hello \r\n world"),
+    "helloworld",
+    "removes new lines"
+  );
+
   assert.end();
 });
