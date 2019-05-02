@@ -1,9 +1,9 @@
-import { splitByDelimiter } from "./splitByDelimiter";
+import { splitBy } from "./splitBy";
 
 /**
- * @param {String} text
+ * @param {String} s
  * @return {String[]}
  */
-const splitByNewLines = text => splitByDelimiter(/\r\n|\n/g)(text);
+const splitByNewLines = s => splitBy (/\r\n|\n/g) (s);
 
 export { splitByNewLines };
