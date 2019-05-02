@@ -1,7 +1,9 @@
+import { join } from "./join";
+
 /**
- * @param {String[]} items
+ * @param {String[]|Number[]} x
  * @return {String}
  */
-const joinWithComma = items => items.join(",");
+const joinWithComma = x => join (",") (x);
 
 export { joinWithComma };
