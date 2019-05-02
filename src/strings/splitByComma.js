@@ -1,9 +1,9 @@
-import { splitByDelimiter } from "./splitByDelimiter";
+import { splitBy } from "./splitBy";
 
 /**
- * @param {String} text
+ * @param {String} s
  * @return {String[]}
  */
-const splitByComma = text => splitByDelimiter(/,/g)(text);
+const splitByComma = s => splitBy (/,/g) (s);
 
 export { splitByComma };
