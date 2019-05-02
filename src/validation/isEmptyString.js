@@ -8,8 +8,8 @@ function isEmptyString(s) {
   if (!isString(s)) {
     throw new TypeError("Argument must be of type string");
   }
-  
-  return s === ""; 
+
+  return s === "";
 }
 
-export { isEmptyString }
+export { isEmptyString };
