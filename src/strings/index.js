@@ -1,23 +1,10 @@
-import { joinWithComma } from "./joinWithComma";
-import { joinWithNewLine } from "./joinWithNewLine";
-import { removeCommas } from "./removeCommas";
-import { removeFalseyStrings } from "./removeFalseyStrings";
-import { splitByComma } from "./splitByComma";
-import { splitBy } from "./splitBy";
-import { splitByNewLines } from "./splitByNewLines";
-import { splitByWhiteSpace } from "./splitByWhiteSpace";
-import { trim } from "./trim";
-import { trims } from "./trims";
-
-export {
-  joinWithComma,
-  joinWithNewLine,
-  removeCommas,
-  removeFalseyStrings,
-  splitByComma,
-  splitBy,
-  splitByNewLines,
-  splitByWhiteSpace,
-  trim,
-  trims
-};
+export { joinWithComma } from "./joinWithComma";
+export { joinWithNewLine } from "./joinWithNewLine";
+export { removeCommas } from "./removeCommas";
+export { removeFalseyStrings } from "./removeFalseyStrings";
+export { splitBy } from "./splitBy";
+export { splitByComma } from "./splitByComma";
+export { splitByNewLines } from "./splitByNewLines";
+export { splitByWhiteSpace } from "./splitByWhiteSpace";
+export { trim } from "./trim";
+export { trims } from "./trims";
