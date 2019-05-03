@@ -1,7 +1,7 @@
 /**
  * @param {function(currentValue: *): Boolean} predicate
- * @return {function(n: T[]): T[]}
+ * @return {function(items: T[]): T[]}
  */
-const filter = predicate => n => Array.prototype.filter.call(n, predicate);
+const filter = predicate => items => items.filter(predicate);
 
 export { filter };
