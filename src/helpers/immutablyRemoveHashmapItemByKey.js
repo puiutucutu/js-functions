@@ -1,4 +1,6 @@
-const Map = Object.create(null);
+import { createMap } from "./createMap";
+
+const Map = createMap();
 
 /**
  * Immutably copies an object with all of the original properties with the
