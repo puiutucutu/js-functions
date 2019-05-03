@@ -1,5 +1,5 @@
 /**
- * @param {function(currentValue: *): Boolean} predicate
+ * @param {function(T): Boolean} predicate
  * @return {function(items: T[]): T[]}
  */
 const filter = predicate => items => {
