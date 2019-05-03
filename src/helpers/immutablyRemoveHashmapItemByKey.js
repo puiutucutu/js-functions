@@ -5,7 +5,7 @@
  * Note that this function only works on an object nested one level deep.
  *
  * @param {String} key
- * @return {function({}): {}} Object with all of the original properties
+ * @return {Function({}): {}} Object with all of the original properties
  * except the property denoted by `key`.
  */
 const immutablyRemoveHashmapItemByKey = key => hashmap =>
