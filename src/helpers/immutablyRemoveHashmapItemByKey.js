@@ -9,7 +9,7 @@
  * except the property denoted by `key`.
  */
 const immutablyRemoveHashmapItemByKey = key => hashmap =>
-  Object.keys(hashmap) // the k's in <K,V> for all hashmap items
+  Object.keys(hashmap) // the k's in <k, v> for all hashmap items
     .filter(k => k !== key)
     .reduce((acc, k) => ({ ...acc, [k]: hashmap[k] }), {});
 
