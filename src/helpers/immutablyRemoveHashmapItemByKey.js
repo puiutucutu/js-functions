@@ -36,7 +36,7 @@ const removeKeyFromObjectInlined = key => obj =>
   )(keysOf(obj));
 
 const removeKeyFromObjectUsingComposition = key => obj =>
-  compose (reduce((map, k) => ({ ...map, [k]: obj[k] }))(Map))
+  compose (reduce((map, k) => ({ ...map, [k]: obj[k] })) (Map))
           (filter(k => k !== key))
           (keysOf(obj));
 
