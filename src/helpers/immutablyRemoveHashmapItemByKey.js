@@ -40,9 +40,4 @@ const removeKeyFromObjectUsingComposition = key => obj =>
           (filter(k => k !== key))
           (keysOf(obj));
 
-const removeKeyFromObjectUsingComposition = key => obj => compose 
-  (reduce((map, k) => ({ ...map, [k]: obj[k] }))(Map))
-  (filter(k => k !== key))
-  (keysOf(obj));
-
 export { immutablyRemoveHashmapItemByKey };
