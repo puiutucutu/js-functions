@@ -12,7 +12,7 @@ test("testing `toHashmapByPropNameValue ` fn", function(t) {
     "mercedes": { id: 456, brand: "mercedes", model: "S Class"}
   }
 
-  const expected = toHashmapByPropNameValue(data, "brand");
+  const expected = toHashmapByPropNameValue ("brand") (data);
   
   t.equal(actual, expected, "returns expected result");
   t.end();
