@@ -7,6 +7,6 @@ import { toHashmapByPropNameValue } from "./toHashmapByPropNameValue";
  * @param {array} items
  * @returns {object}
  */
-const toHashmapById = items => toHashmapByPropNameValue(items, "id");
+const toHashmapById = items => toHashmapByPropNameValue ("id") (items);
 
 export { toHashmapById }
