@@ -6,4 +6,7 @@
  */
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 
+const reduce = reducer => initial => items => items.reduce(reducer, initial);
+const pipeAlternate = (...fns) => x => reduce ((y, f) => f(y)) (x) (fns);
+
 export { pipe };
