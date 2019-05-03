@@ -29,7 +29,7 @@ const removeKeyFromObject = key => obj => {
   return reduce((map, k) => ({ ...map, [k]: obj[k] })) (Map) (keysToKeep);
 };
 
-const removeKeyFromObjectInlined = key => obj =>
+const removeKeyFromObjectUsingPipe = key => obj =>
   pipe(
     filter (k => k !== key),
     reduce ((map, k) => ({ ...map, [k]: obj[k] })) (Map)
