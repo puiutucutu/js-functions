@@ -21,6 +21,7 @@ const filter = predicate => n => Array.prototype.filter.call(n, predicate);
 const reduce = reducer => initial => items => items.reduce(reducer, initial);
 const keysOf = obj => Object.keys(obj);
 const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+const compose = f => g => x => f(g(x));
 
 const removeKeyFromObject = key => obj => {
   const keys = keysOf(obj);
@@ -33,5 +34,15 @@ const removeKeyFromObjectInlined = key => obj =>
     filter (k => k !== key),
     reduce ((map, k) => ({ ...map, [k]: obj[k] })) (Map)
   )(keysOf(obj));
+
+const removeKeyFromObjectUsingComposition = key => obj =>
+  compose (reduce((map, k) => ({ ...map, [k]: obj[k] }))(Map))
+          (filter(k => k !== key))
+          (keysOf(obj));
+
+const removeKeyFromObjectUsingComposition = key => obj => compose 
+  (reduce((map, k) => ({ ...map, [k]: obj[k] }))(Map))
+  (filter(k => k !== key))
+  (keysOf(obj));
 
 export { immutablyRemoveHashmapItemByKey };
