@@ -1,10 +1,8 @@
-import { map } from "./map";
-
 /**
- * @param {T} initial
- * @return {function(*): function(items: U[]): T}
+ * @param {function(acc: T, curr: U)} reducer
+ * @return {function(initialValue: T): function(items: U[]): (T|*)}
  */
-const reduce = initial => reducer => items => {
+const reduce = reducer => initial => items => {
   let accumulator = initial;
 
   const len = items.length;
