@@ -1,5 +1,5 @@
 import test from "tape";
-import { convertArrayOfObjectsToObjectOfObjects  } from "../src/helpers/convertArrayOfObjectsToObjectOfObjects ";
+import { convertArrayOfObjectsToObjectOfObjects } from '../../src/helpers'
 
 test("testing `convertArrayOfObjectsToObjectOfObjects ` fn", function(t) {
 
@@ -14,7 +14,7 @@ test("testing `convertArrayOfObjectsToObjectOfObjects ` fn", function(t) {
   }
 
   const expected = convertArrayOfObjectsToObjectOfObjects(data, "brand");
-  
+
   t.equal(actual, expected, "returns expected result");
   t.end();
 });

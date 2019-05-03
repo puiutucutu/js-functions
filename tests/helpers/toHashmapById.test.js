@@ -1,5 +1,5 @@
 import test from "tape";
-import { toHashmapById  } from "../src/helpers/toHashmapById";
+import { toHashmapById  } from "../../src/helpers";
 
 test("testing `toHashmapById ` fn", function(t) {
   const data = [
