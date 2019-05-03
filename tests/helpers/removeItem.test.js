@@ -10,11 +10,11 @@ test("testing `removeItem  ` fn", function(t) {
     "returns expected result when supplied Number[]"
   );
 
-  cosnt randomStrings = ["ab", "cd", "ef"];
+  cosnt strs = ["ab", "cd", "ef"];
   
   t.equal(
     ["ab", "cd"],
-    removeItem ("ef") (randomStrings), 
+    removeItem ("ef") (strs), 
     "returns expected result when supplied String[]"
   );
   
