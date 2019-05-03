@@ -1,16 +1,17 @@
+const prototypeLessObject = Object.create(null);
+
 /**
  * Takes an array of objects and converts them to a hashmap using the
  * supplied propName for the key access as in <K,V>.
  *
- * @param {array} arr
- * @param {string} propName
- * @returns {object}
+ * @param {String} propName
+ * @return {function(*[]): {}}
  */
-function toHashmapByPropNameValue(arr, propName) {
-  return arr.reduce((acc, el) => {
-    const k = el[propName];
-    return { ...acc, [k]: el };
-  }, {});
-}
+const toHashmapByPropNameValue = propName => arr =>
+  arr.reduce(
+    (obj, el) => ({ ...obj, [el[propName]]: el }),
+    prototypeLessObject
+  );
+
 
 export { toHashmapByPropNameValue }
