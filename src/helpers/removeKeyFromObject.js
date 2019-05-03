@@ -9,10 +9,10 @@ const Map = createMap();
  * Note that this function only works on an object nested one level deep.
  *
  * @param {String} key
- * @return {Function({}): {}} Object with all of the original properties
+ * @return {function({}): {}} Object with all of the original properties
  * except the property denoted by `key`.
  */
-const immutablyRemoveHashmapItemByKey = key => obj =>
+const removeKeyFromObjectNative = key => obj =>
   Object.keys(obj)
     .filter(k => k !== key)
     .reduce((map, k) => ({ ...map, [k]: obj[k] }), Map);
@@ -48,4 +48,4 @@ const removeKeyFromObjectUsingCompositionClearer = key => obj => {
   return compose (reducer) (filterer) (keys)
 }
 
-export { immutablyRemoveHashmapItemByKey };
+export { removeKeyFromObject };
