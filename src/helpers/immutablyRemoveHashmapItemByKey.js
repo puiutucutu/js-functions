@@ -17,4 +17,17 @@ const immutablyRemoveHashmapItemByKey = key => obj =>
     .filter(k => k !== key)
     .reduce((map, k) => ({ ...map, [k]: obj[k] }), Map);
 
+const filter = predicate => n => Array.prototype.filter.call(n, predicate);
+const reduce = reducer => initial => items => items.reduce(reducer, initial);
+const keysOf = obj => Object.keys(obj);
+const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
+
+const removeKeyFromObject = key => obj => {
+  const keys = keysOf(obj)
+  const keysToKeep = filter (k => k !== key) (keys)
+  const final = reduce ((map, K) => ({...map, [K]: obj[K]})) (Map) (keysToKeep)
+
+  return final
+}
+
 export { immutablyRemoveHashmapItemByKey }
