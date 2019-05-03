@@ -11,7 +11,7 @@ const Map = Object.create(null);
  * except the property denoted by `key`.
  */
 const immutablyRemoveHashmapItemByKey = key => obj =>
-  Object.keys(obj) // the k's in <k, v> for all hashmap items
+  Object.keys(obj)
     .filter(k => k !== key)
     .reduce((acc, k) => ({ ...acc, [k]: hashmap[k] }), Map);
 
