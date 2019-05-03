@@ -30,4 +30,10 @@ const removeKeyFromObject = key => obj => {
   return final;
 };
 
+const removeKeyFromObjectInlined = key => obj =>
+  pipe(
+    filter (k => k !== key),
+    reduce ((map, k) => ({ ...map, [k]: obj[k] })) (Map)
+  )(keysOf(obj));
+
 export { immutablyRemoveHashmapItemByKey };
