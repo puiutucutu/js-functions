@@ -10,7 +10,7 @@ test("testing `removeItem  ` fn", function(t) {
     "returns expected result when supplied Number[]"
   );
 
-  cosnt strs = ["ab", "cd", "ef"];
+  const strs = ["ab", "cd", "ef"];
   
   t.equal(
     ["ab", "cd"],
