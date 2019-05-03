@@ -9,7 +9,7 @@ const convertArrayOfObjectsToObjectOfObjects = (items, propKeyName) =>
   items.reduce(
     (obj, item) => ({
       ...obj,
-      [propKeyName]: { ...item }
+      [item[propKeyName]]: { ...item }
     }),
     prototypeLessObject
   );
