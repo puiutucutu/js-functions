@@ -13,6 +13,6 @@ const Map = Object.create(null);
 const immutablyRemoveHashmapItemByKey = key => obj =>
   Object.keys(obj)
     .filter(k => k !== key)
-    .reduce((acc, k) => ({ ...acc, [k]: hashmap[k] }), Map);
+    .reduce((map, k) => ({ ...map, [k]: hashmap[k] }), Map);
 
 export { immutablyRemoveHashmapItemByKey }
