@@ -4,4 +4,4 @@
  */
 const keysOf = obj => Object.keys(obj);
 
-export { keysOf }
+export { keysOf };
