@@ -11,6 +11,6 @@ test("testing `keysOf  ` fn", function(t) {
   const actual = ["id", "brand", "model"];
   const expected = keysOf(obj);
 
-  t.equal(actual, expected, "returns expected result");
+  t.deepEqual(actual, expected, "returns expected result");
   t.end();
 });

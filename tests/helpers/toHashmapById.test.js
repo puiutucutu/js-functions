@@ -13,7 +13,7 @@ test("testing `toHashmapById ` fn", function(t) {
   }
 
   const expected = toHashmapById(data);
-  
-  t.equal(actual, expected, "returns expected result");
+
+  t.deepEqual(actual, expected, "returns expected result");
   t.end();
 });

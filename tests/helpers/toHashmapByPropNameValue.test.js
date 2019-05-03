@@ -13,7 +13,7 @@ test("testing `toHashmapByPropNameValue ` fn", function(t) {
   }
 
   const expected = toHashmapByPropNameValue ("brand") (data);
-  
-  t.equal(actual, expected, "returns expected result");
+
+  t.deepEqual(actual, expected, "returns expected result");
   t.end();
 });

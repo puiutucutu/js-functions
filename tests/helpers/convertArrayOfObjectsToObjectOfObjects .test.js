@@ -15,6 +15,6 @@ test("testing `convertArrayOfObjectsToObjectOfObjects ` fn", function(t) {
 
   const expected = convertArrayOfObjectsToObjectOfObjects(data, "brand");
 
-  t.equal(actual, expected, "returns expected result");
+  t.deepEqual(actual, expected, "returns expected result");
   t.end();
 });

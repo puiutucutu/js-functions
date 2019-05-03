@@ -15,6 +15,6 @@ test("testing `removeKeyFromObject  ` fn", function(t) {
 
   const expected = removeKeyFromObject ("brand") (obj);
 
-  t.equal(actual, expected, "returns expected result");
+  t.deepEqual(actual, expected, "returns expected result");
   t.end();
 });
