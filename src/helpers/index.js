@@ -1,4 +1,4 @@
-export {convertArrayOfObjectsToObjectOfObjects} from "./convertArrayOfObjectsToObjectOfObjects";
+export { convertArrayOfObjectsToMap } from "./convertArrayOfObjectsToMap";
 export { createMap } from "./createMap";
 export { keysOf } from "./keysOf";
 export { removeItem } from "./removeItem";

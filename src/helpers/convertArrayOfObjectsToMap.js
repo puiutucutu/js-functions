@@ -5,7 +5,7 @@ const prototypeLessObject = Object.create(null);
  * @param {String} propKeyName
  * @return {{ k: string, v: * }}
  */
-const convertArrayOfObjectsToObjectOfObjects = (items, propKeyName) =>
+const convertArrayOfObjectsToMap = (items, propKeyName) =>
   items.reduce(
     (obj, item) => ({
       ...obj,
@@ -14,4 +14,4 @@ const convertArrayOfObjectsToObjectOfObjects = (items, propKeyName) =>
     prototypeLessObject
   );
 
-export { convertArrayOfObjectsToObjectOfObjects };
+export { convertArrayOfObjectsToMap };

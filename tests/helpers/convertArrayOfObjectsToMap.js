@@ -1,7 +1,7 @@
 import test from "tape";
-import { convertArrayOfObjectsToObjectOfObjects } from '../../src/helpers'
+import { convertArrayOfObjectsToMap } from '../../src/helpers'
 
-test("testing `convertArrayOfObjectsToObjectOfObjects ` fn", function(t) {
+test("testing `convertArrayOfObjectsToMap` fn", function(t) {
 
   const data = [
     { id: 1, brand: "bmw", model: "7 Series" },
@@ -13,7 +13,7 @@ test("testing `convertArrayOfObjectsToObjectOfObjects ` fn", function(t) {
     "mercedes": { id: 2, brand: "mercedes", model: "S Class"}
   }
 
-  const expected = convertArrayOfObjectsToObjectOfObjects(data, "brand");
+  const expected = convertArrayOfObjectsToMap(data, "brand");
 
   t.deepEqual(actual, expected, "returns expected result");
   t.end();
