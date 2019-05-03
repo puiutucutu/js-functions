@@ -12,7 +12,7 @@ test("`collapseWhitespace` fn", function(assert) {
   );
 
   assert.deepEqual(
-    collapseWhitespace("hello \r\n world"),
+    collapseWhitespace("hello   \r\n   world"),
     "helloworld",
     "removes new lines"
   );
