@@ -13,5 +13,4 @@ const toHashmapByPropNameValue = propName => arr =>
     prototypeLessObject
   );
 
-
 export { toHashmapByPropNameValue }
