@@ -9,7 +9,10 @@ const prototypeLessObject = Object.create(null);
  */
 const toHashmapByPropNameValue = propName => arr =>
   arr.reduce(
-    (obj, el) => ({ ...obj, [el[propName]]: el }),
+    (obj, el) => ({ 
+      ...obj, 
+      [el[propName]]: el 
+    }),
     prototypeLessObject
   );
 
