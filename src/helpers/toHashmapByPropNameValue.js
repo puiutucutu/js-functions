@@ -1,6 +1,6 @@
 /**
  * Takes an array of objects and converts them to a hashmap using the
- * supplied propName as the key as in <K,V>.
+ * supplied propName for the key access as in <K,V>.
  *
  * @param {array} arr
  * @param {string} propName
