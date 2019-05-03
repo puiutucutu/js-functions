@@ -24,8 +24,8 @@ const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 
 const removeKeyFromObject = key => obj => {
   const keys = keysOf(obj);
-  const keysToKeep = filter(k => k !== key)(keys);
-  return reduce((map, k) => ({ ...map, [k]: obj[k] }))(Map)(keysToKeep);
+  const keysToKeep = filter (k => k !== key) (keys);
+  return reduce((map, k) => ({ ...map, [k]: obj[k] })) (Map) (keysToKeep);
 };
 
 const removeKeyFromObjectInlined = key => obj =>
