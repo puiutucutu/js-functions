@@ -40,4 +40,12 @@ const removeKeyFromObjectUsingComposition = key => obj =>
           (filter(k => k !== key))
           (keysOf(obj));
 
+const removeKeyFromObjectUsingCompositionClearer = key => obj => {
+  const keys = keysOf(obj);
+  const filterer = filter (k => k !== key);
+  const reducer = reduce ((map, k) => ({ ...map, [k]: obj[k] })) (Map);
+  
+  return compose (reducer) (filterer) (keys)
+}
+
 export { immutablyRemoveHashmapItemByKey };
