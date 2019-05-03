@@ -1,4 +1,4 @@
-const dict = Object.create(null);
+const map = Object.create(null);
 
 /**
  * Immutably copies an object with all of the original properties with the
@@ -13,6 +13,6 @@ const dict = Object.create(null);
 const immutablyRemoveHashmapItemByKey = key => hashmap =>
   Object.keys(hashmap) // the k's in <k, v> for all hashmap items
     .filter(k => k !== key)
-    .reduce((acc, k) => ({ ...acc, [k]: hashmap[k] }), dict);
+    .reduce((acc, k) => ({ ...acc, [k]: hashmap[k] }), map);
 
 export { immutablyRemoveHashmapItemByKey }
