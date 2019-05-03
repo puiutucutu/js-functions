@@ -8,6 +8,9 @@ const prototypeLessObject = Object.create(null);
  * @return {function(*[]): {}}
  */
 const toHashmapByPropNameValue = propName => items =>
-  items.reduce((obj, item) => ({ ...obj, [item[propName]]: item }), prototypeLessObject);
+  items.reduce(
+    (obj, item) => ({ ...obj, [item[propName]]: item }), 
+    prototypeLessObject
+  );
 
 export { toHashmapByPropNameValue }
