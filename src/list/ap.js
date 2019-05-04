@@ -1,6 +1,8 @@
 import { reduce } from "./native/reduce";
 import { map } from "./native/map";
 
+const apNatively = (...fns) => x => fns.reduce((acc, f) => acc.map(f), x);
+
 /**
  * Applies a list of functions to a list of values.
  *
