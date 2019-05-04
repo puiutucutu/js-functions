@@ -17,9 +17,9 @@ const flatten = items =>
  */
 const concat = (...args) => Array.prototype.concat(...args);
 
+const flattenReduceConcat = (arr) => arr.reduce((a, b) => a.concat(b), []);
 const flattenConcatES6 = arrays => [].concat(...arrays);
 const flattenConcatES5 = arrays => [].concat.apply([], arrays);
-
 const flattenRecursiveES6 = arr =>
   Array.isArray(arr)
     ? [].concat(...arr.map(flattenRecursiveES6))
