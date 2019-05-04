@@ -1,25 +1,29 @@
 import test from "tape";
 import { compose } from "../src/list/compose";
 
-test("testing `compose` fn", function(t) {
-  let actual, expected;
+test("`compose` fn", function(t) {
+  let actual, expected, fnCall;
 
-  const fnCall = compose(
-    () => {},
-    () => {}
-  );
+  const noop = () => {};
+
+  fnCall = compose (noop)
   actual = Object.prototype.toString.call(fnCall);
   expected = "[object Function]";
-  t.equal(actual, expected, "`compose` returns a function on first call");
+  t.equal(actual, expected, "returns a function on first partial application");
+
+  fnCall = compose (noop) (noop)
+  actual = Object.prototype.toString.call(fnCall);
+  expected = "[object Function]";
+  t.equal(actual, expected, "returns a function on second partial application");
 
   const addsFive = a => a + 5;
   const multipliesBySix = a => a * 6;
-  actual = compose(
-    addsFive,
-    multipliesBySix
-  )(2);
-  expected = 17;
-  t.equal(actual, expected, "returns the expected value");
+
+  t.equal(
+    compose (addsFive) (multipliesBySix) (2),
+    17,
+    "returns the expected value"
+  );
 
   t.end();
 });

@@ -1,8 +1,7 @@
 /**
  * @param {Function} f
- * @param {Function} g
- * @return {function(*): *}
+ * @return {function(g: Function): function(x: String|Number|Array|Object): *}
  */
-const compose = (f, g) => x => f(g(x));
+const compose = f => g => x => f(g(x));
 
 export { compose };
