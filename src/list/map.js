@@ -1,14 +1,18 @@
 /**
- * @param {function(*): *} f
+ * @param {function(*): *} mapper
  * @return {function(x: *[]): *[]}
  */
-const map = f => x => {
-  const len = x.length;
-  const mapped = [];
-  for (let i = 0; i < len; i++) {
-    mapped.push(f(x[i]));
-  }
-  return mapped;
-};
+function map(mapper) {
+  return function(n) {
+    const mapped = [],
+      length = n.length;
+
+    for (let i = 0; i < length; i++) {
+      mapped.push(mapper(n[i]));
+    }
+
+    return mapped;
+  };
+}
 
 export { map };

@@ -3,12 +3,13 @@
  * @return {function(T[]): T[]}
  */
 function filter(predicate) {
-  return function(items) {
-    const collection = [];
+  return function(n) {
+    const collection = [],
+      length = n.length;
 
-    for (let i = 0; i < items.length; i++) {
-      if (predicate(items[i]) === true) {
-        collection.push(items[i]);
+    for (let i = 0; i < length; i++) {
+      if (predicate(n[i]) === true) {
+        collection.push(n[i]);
       }
     }
 
