@@ -1,4 +1,6 @@
 /**
+ * reduce :: (a, b) => (a) => (b[]) -> a[]
+ *
  * @param {function(accumulator: T, currentValue: U)} reducer
  * @return {function(initialValue: T): function(items: U[]): (T|*)}
  */
