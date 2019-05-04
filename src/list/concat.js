@@ -1,4 +1,4 @@
 // concat :: a[] => b[] => c[]
-const concat = xs => y => [...xs, ...y];
+const concat = xs => ys => [...xs, ...ys];
 
 export { concat };
