@@ -1,6 +1,7 @@
 import { reduce } from "./native";
 
-const pipeNatively = (...fns) => x => fns.reduce((y, f) => f(y), x);
+// pipeNatively
+const pipe = (...fns) => x => fns.reduce((y, f) => f(y), x);
 
 /**
  * Reduces N functions over some value of `x`.
@@ -8,6 +9,6 @@ const pipeNatively = (...fns) => x => fns.reduce((y, f) => f(y), x);
  * @param {...Function} fns Each fn must have an arity of 1
  * @return {function(*): *} Some value `x` reduced over each fn of fns
  */
-const pipe = (...fns) => x => reduce ((y, f) => f(y)) (x) (fns);
+// const pipe = (...fns) => x => reduce ((y, f) => f(y)) (x) (fns);
 
 export { pipe };
