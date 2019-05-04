@@ -5,9 +5,9 @@
 function map(mapper) {
   return function(n) {
     const mapped = [],
-      length = n.length;
+      len = n.length;
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < len; i++) {
       mapped.push(mapper(n[i]));
     }
 

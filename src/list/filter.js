@@ -5,9 +5,9 @@
 function filter(predicate) {
   return function(n) {
     const collection = [],
-      length = n.length;
+      len = n.length;
 
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < len; i++) {
       if (predicate(n[i]) === true) {
         collection.push(n[i]);
       }
