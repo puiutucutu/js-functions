@@ -50,22 +50,20 @@ Will properly handle deeply nested arrays such that:
 Implementations
 
 ```js
-const flatten = items =>
-  items.reduce(
+const flatten = xs =>
+  xs.reduce(
     (acc, el) => (Array.isArray(el) ? [...acc, ...flatten(el)] : [...acc, el]),
     []
   )
   
-const flattenDeepES6 = arr =>
-  Array.isArray(arr)
-    ? [].concat(...arr.map(flattenDeepES6))
-    : [...arr];
+const flattenDeepES6 = xs =>
+  Array.isArray(xs)
+    ? [].concat(...xs.map(flattenDeepES6))
+    : [...xs];
 
-const flattenDeepAlternateES6 = arr =>
+const flattenDeepAlternateES6 = xs =>
   [].concat(
-    ...arr.map(el =>
-      Array.isArray(el) ? flattenDeepAlternateES6(el) : el
-    )
+    ...xs.map(el => Array.isArray(el) ? flattenDeepAlternateES6(el) : el)
   );
 ```
 
