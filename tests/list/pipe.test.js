@@ -1,7 +1,7 @@
 import test from "tape";
 import { pipe } from "../../src/list";
 
-test("`pipe` function", function(t) {
+test("pipe", function(t) {
   const addOne = x => x + 1;
   const double = x => x * 2;
 
