@@ -1,5 +1,5 @@
 /**
- * Reduces N functions over some value of `x`.
+ * Applies a list of functions to a single value.
  *
  * @param {...Function} fns Each fn must have an arity of 1
  * @return {function(U): T} Some value `x` reduced over each fn of fns
