@@ -1,16 +1,16 @@
 import test from "tape";
-import { flatten } from "../flatten";
+import { flattener } from "../flattener";
 
 test("flatten", function(assert) {
   assert.deepEqual(
-    flatten([[1, 2, 3], [4, 5, 6]]),
+    flattener([[1, 2, 3], [4, 5, 6]]),
     [1, 2, 3, 4, 5, 6],
     "returns expected value"
   );
 
   assert.deepEqual(
-    flatten([[1, 2, 3], [[4, 5, 6], [7, 8, 9]], [10, 11, 12], [[[13, 14]]]]),
-    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    flattener([1, [2, [3, [4, [5], 6], 7], 8], 9]),
+    [1, 2, 3, 4, 5, 6, 7, 8, 9],
     "can handle deeply nested arrays (i.e., four levels deep)"
   );
 
