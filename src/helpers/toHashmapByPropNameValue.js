@@ -11,7 +11,7 @@ const Map = createMap();
  * @return {function(*[]): {}}
  */
 const toHashmapByPropNameValue = propName => xs => reduce
-  (obj => x => ({ ...obj, [x[propName]]: x }))
+  (acc => x => ({ ...acc, [x[propName]]: x }))
   (Map)
   (xs)
 ;
