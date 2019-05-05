@@ -3,6 +3,7 @@ export { native };
 
 export { apply } from "./apply";
 export { applyMany } from "./applyMany";
+export { concat } from "./concat";
 export { compose } from "./compose";
 export { composes } from "./composes";
 export { filter } from "./filter";
