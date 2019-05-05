@@ -9,7 +9,6 @@ export { concat } from "./concat";
 export { filter } from "./filter";
 export { flatMap } from "./flatMap";
 export { flatten } from "./flatten";
-export { index } from "./index";
 export { map } from "./map";
 export { pipe } from "./pipe";
 export { reduce } from "./reduce";
