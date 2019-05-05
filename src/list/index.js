@@ -1,7 +1,6 @@
 import * as native from "./native";
 export { native };
 
-export { ap } from "./ap";
 export { apply } from "./apply";
 export { applyMany } from "./applyMany";
 export { compose } from "./compose";
