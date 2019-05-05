@@ -68,10 +68,3 @@ const flattenDeepAlternateES6 = xs =>
 ```
 
 Probably best to use a generator solution to avoid memory size issues.
-
-
-
-
-
-
-
