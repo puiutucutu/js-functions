@@ -1,20 +1,18 @@
 import test from "tape";
 import { joinWithComma } from "../joinWithComma";
 
-test("Returns expected value", function(assert) {
-  const actual = ["a", "b", "c"];
-  const expected = "a,b,c";
+test("joinWithComma", function(assert) {
+  assert.deepEqual(
+    joinWithComma(["a", "b", "c"]),
+    "a,b,c",
+    "returns expected value"
+  );
 
-  assert.equal(joinWithComma(actual), expected);
-
-  assert.end();
-});
-
-test("Returns empty string when empty array is provided", function(assert) {
-  const actual = [];
-  const expected = "";
-
-  assert.equal(joinWithComma(actual), expected);
+  assert.deepEqual(
+    joinWithComma([]),
+    "",
+    "returns empty string when empty array is provided"
+  );
 
   assert.end();
 });
