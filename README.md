@@ -20,8 +20,10 @@ Spreading as shown below does not get translated into an apply.
 // ES6
 const concat1 = xs => ys => [].concat(xs, ys);
 const concat2 = xs => ys => [...xs, ...ys];
+const concat3 = (...args) => Array.prototype.concat(...args)
 const concatApply1 = xs => ys => [].concat(...xs, ...ys);
 const concatApply2 = xs => ys => [].concat.apply(xs, ys);
+
 ```
 
 ```js
@@ -38,6 +40,11 @@ var concat2 = function concat2(xs) {
   return function (ys) {
     return [].concat(xs, ys);
   };
+};
+
+var concat3 = function concat3() {
+  var _Array$prototype;
+  return (_Array$prototype = Array.prototype).concat.apply(_Array$prototype, arguments);
 };
 
 var concatApply1 = function concatApply1(xs) {
