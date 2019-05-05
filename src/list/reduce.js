@@ -13,7 +13,7 @@ const reduce = reducer => initialValue => items => {
 
   const len = items.length;
   for (let i = 0; i < len; i++) {
-    accumulator = reducer(accumulator, items[i]);
+    accumulator = reducer (accumulator) (items[i]);
   }
 
   return accumulator;
