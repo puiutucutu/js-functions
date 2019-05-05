@@ -1,4 +1,7 @@
-const prototypeLessObject = Object.create(null);
+import { reduce } from "../list";
+import { createMap } from "./createMap";
+
+const Map = createMap();
 
 /**
  * Takes an array of objects and converts them to a hashmap using the
@@ -7,10 +10,10 @@ const prototypeLessObject = Object.create(null);
  * @param {String} propName
  * @return {function(*[]): {}}
  */
-const toHashmapByPropNameValue = propName => items =>
-  items.reduce(
-    (obj, item) => ({ ...obj, [item[propName]]: item }), 
-    prototypeLessObject
-  );
+const toHashmapByPropNameValue = propName => xs => reduce
+  (obj => x => ({ ...obj, [x[propName]]: x }))
+  (Map)
+  (xs)
+;
 
-export { toHashmapByPropNameValue }
+export { toHashmapByPropNameValue };
