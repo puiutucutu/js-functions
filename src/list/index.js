@@ -2,6 +2,7 @@ import * as native from "./native";
 export { native };
 
 export { ap } from "./ap";
+export { apply } from "./apply";
 export { compose } from "./compose";
 export { composes } from "./composes";
 export { filter } from "./filter";
