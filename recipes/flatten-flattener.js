@@ -18,7 +18,7 @@ const uncurry = f => (a, b) => f (a) (b);
 const foldl = f => acc => xs => reduce (uncurry(f)) (acc) (xs); // aka reduce
 
 const concat = xs => y => xs.concat(y);
-const map = f => xs => Array.prototype.map.call(xs, f);
+const map = f => xs => Array.prototype.map.call(xs, apply(f));
 const isArray = Array.isArray;
 const apply = f => a => f(a);
 
