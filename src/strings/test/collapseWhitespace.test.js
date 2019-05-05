@@ -1,7 +1,7 @@
 import test from "tape";
 import { collapseWhitespace } from "../collapseWhitespace";
 
-test("`collapseWhitespace` fn", function(assert) {
+test("collapseWhitespace", function(assert) {
   const actual = "lorem  ipsum   dolor    sit     amet";
   const expected = "loremipsumdolorsitamet";
 

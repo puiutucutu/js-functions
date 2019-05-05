@@ -1,7 +1,7 @@
 import test from "tape";
 import { flatten } from "../flatten";
 
-test("`flatten` function", function(assert) {
+test("flatten", function(assert) {
   assert.deepEqual(
     flatten([[1, 2, 3], [4, 5, 6]]),
     [1, 2, 3, 4, 5, 6],

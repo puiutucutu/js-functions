@@ -1,7 +1,7 @@
 import test from "tape";
 import { flatMap } from "../flatMap";
 
-test("`flatMap` returns expected value", function(assert) {
+test("flatMap", function(assert) {
   const nums = [1, 2, 3];
   const origWithDouble = x => [x, x * 2];
 

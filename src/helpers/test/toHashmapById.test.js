@@ -1,7 +1,7 @@
 import test from "tape";
 import { toHashmapById  } from "../toHashmapById";
 
-test("testing `toHashmapById ` fn", function(t) {
+test("toHashmapById", function(t) {
   const data = [
     { id: 123, brand: "bmw", model: "7 Series" },
     { id: 456, brand: "mercedes", model: "S Class"}

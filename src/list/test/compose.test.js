@@ -1,7 +1,7 @@
 import test from "tape";
 import { compose } from "../compose";
 
-test("`compose` fn", function(t) {
+test("compose", function(t) {
   let actual, expected, fnCall;
 
   const noop = () => {};

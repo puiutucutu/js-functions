@@ -1,7 +1,7 @@
 import test from "tape";
 import { identity } from "../identity";
 
-test("`identity` fn", function(assert) {
+test("identity", function(assert) {
   assert.deepEqual(identity("a"), "a", "returns expected value");
   assert.deepEqual(identity([1,2,3]), [1,2,3], "returns expected array value");
   assert.deepEqual(identity(""), "", "returns empty string when empty string supplied");

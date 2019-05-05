@@ -1,7 +1,7 @@
 import test from "tape";
 import { composes } from "../composes";
 
-test("testing `composes` fn", function(t) {
+test("composes", function(t) {
   let fnCall, actual, expected;
 
   fnCall = composes(() => {});

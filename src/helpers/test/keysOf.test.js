@@ -1,7 +1,7 @@
 import test from "tape";
 import { keysOf } from "../keysOf";
 
-test("testing `keysOf  ` fn", function(t) {
+test("keysOf", function(t) {
   const obj = {
     id: 123,
     brand: "bmw",

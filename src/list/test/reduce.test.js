@@ -1,7 +1,7 @@
 import test from "tape";
 import { reduce } from "../reduce";
 
-test("`reduce` function", function(t) {
+test("reduce (reimplemented)", function(t) {
   const reducer = (prev) => (next) => prev + next;
   const actual = reduce (reducer) (0) ([1, 2, 3, 4]);
   const expected = 10;

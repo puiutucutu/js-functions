@@ -1,7 +1,7 @@
 import test from "tape";
 import { removeKeyFromObject } from "../removeKeyFromObject";
 
-test("testing `removeKeyFromObject` fn", function(t) {
+test("removeKeyFromObject", function(t) {
   const obj = {
     id: 123,
     brand: "bmw",

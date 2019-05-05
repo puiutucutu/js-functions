@@ -1,7 +1,7 @@
 import test from "tape";
 import { convertArrayOfObjectsToMap } from '../convertArrayOfObjectsToMap'
 
-test("testing `convertArrayOfObjectsToMap` fn", function(t) {
+test("convertArrayOfObjectsToMap", function(t) {
 
   const data = [
     { id: 1, brand: "bmw", model: "7 Series" },
