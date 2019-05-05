@@ -19,7 +19,7 @@ Non recursive means it won't flatten deeply nested arrays such that:
 Native implementations
 
 ```js
-const flattenReduceConcat = (arr) => arr.reduce((a, b) => a.concat(b), []);
+const flattenReduceConcat = (xs) => xs.reduce((a, b) => a.concat(b), []);
 const flattenConcatES6 = arrays => [].concat(...arrays);
 const flattenConcatES5 = arrays => [].concat.apply([], arrays);
 ```
