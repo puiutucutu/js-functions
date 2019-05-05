@@ -1,5 +1,5 @@
 import test from "tape";
-import { joinWithNewLine } from "../../src/strings";
+import { joinWithNewLine } from "../joinWithNewLine";
 
 test("Returns expected value", function(assert) {
   const actual = ["a", "b", "c"];

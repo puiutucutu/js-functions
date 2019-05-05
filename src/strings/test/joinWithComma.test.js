@@ -1,5 +1,5 @@
 import test from "tape";
-import { joinWithComma } from "../../src/strings";
+import { joinWithComma } from "../joinWithComma";
 
 test("Returns expected value", function(assert) {
   const actual = ["a", "b", "c"];

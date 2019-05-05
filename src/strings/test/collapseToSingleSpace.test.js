@@ -1,5 +1,5 @@
 import test from "tape";
-import { collapseToSingleSpace } from "../../src/strings";
+import { collapseToSingleSpace } from "../collapseToSingleSpace";
 
 test("`collapseToSingleSpace` fn", function(assert) {
   const actual = "lorem  ipsum   dolor    sit     amet";
