@@ -1,7 +1,7 @@
 import test from "tape";
-import { filter } from "../../../src/list/native/filter";
+import { filter } from "../filter";
 
-test("`filter` function using native implementation", function(t) {
+test("`filter` function", function(t) {
   const data = [1, 2, 3];
   const actual = filter(x => x !== 2)(data);
   const expected = [1, 3];

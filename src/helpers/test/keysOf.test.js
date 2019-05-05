@@ -1,5 +1,5 @@
 import test from "tape";
-import { keysOf } from "../../src/helpers";
+import { keysOf } from "../keysOf";
 
 test("testing `keysOf  ` fn", function(t) {
   const obj = {

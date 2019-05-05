@@ -1,5 +1,5 @@
 import test from "tape";
-import { convertArrayOfObjectsToMap } from '../../src/helpers'
+import { convertArrayOfObjectsToMap } from '../convertArrayOfObjectsToMap'
 
 test("testing `convertArrayOfObjectsToMap` fn", function(t) {
 

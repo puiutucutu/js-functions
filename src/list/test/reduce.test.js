@@ -1,5 +1,5 @@
 import test from "tape";
-import { reduce } from "../../src/list";
+import { reduce } from "../reduce";
 
 test("`reduce` function", function(t) {
   const reducer = (prev) => (next) => prev + next;

@@ -1,5 +1,5 @@
 import test from "tape";
-import { removeKeyFromObject } from "../../src/helpers";
+import { removeKeyFromObject } from "../removeKeyFromObject";
 
 test("testing `removeKeyFromObject` fn", function(t) {
   const obj = {

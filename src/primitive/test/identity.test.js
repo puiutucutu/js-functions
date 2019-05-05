@@ -1,5 +1,5 @@
 import test from "tape";
-import { identity } from "../../src/primitive";
+import { identity } from "../identity";
 
 test("`identity` fn", function(assert) {
   assert.deepEqual(identity("a"), "a", "returns expected value");

@@ -1,5 +1,5 @@
 import test from "tape";
-import { pipe } from "../../src/list";
+import { pipe } from "../pipe";
 
 test("pipe", function(t) {
   const increment = x => x + 1;

@@ -1,5 +1,5 @@
 import test from "tape";
-import { concat } from "../../src/list";
+import { concat } from "../concat";
 
 test("concat", function(t) {
   t.deepEqual(

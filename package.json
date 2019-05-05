@@ -4,7 +4,7 @@
   "description": "just a place to store functions",
   "main": "index.js",
   "scripts": {
-    "test": "tape -r @babel/register tests/**/*.js | tap-spec",
+    "test": "tape -r @babel/register src/**/*.test.js | tap-spec",
     "test:watch": "nodemon --watch src --watch tests -x \"npm run test\"",
     "prettify": "prettier --write src/**/*.js"
   },

@@ -1,5 +1,5 @@
 import test from "tape";
-import { toHashmapByPropNameValue  } from "../../src/helpers";
+import { toHashmapByPropNameValue  } from "../toHashmapByPropNameValue";
 
 test("testing `toHashmapByPropNameValue ` fn", function(t) {
   const data = [

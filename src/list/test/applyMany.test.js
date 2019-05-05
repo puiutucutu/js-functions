@@ -1,5 +1,5 @@
 import test from "tape";
-import { applyMany } from "../../src/list";
+import { applyMany } from "../applyMany";
 
 test("applyMany", function(t) {
   const addsOne = xs => xs.map(x => x + 1);

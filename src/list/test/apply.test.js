@@ -1,5 +1,5 @@
 import test from "tape";
-import { apply } from "../../src/list";
+import { apply } from "../apply";
 
 test("apply", function(t) {
   const applicator = x => x * 5;

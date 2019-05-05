@@ -1,5 +1,5 @@
 import test from "tape";
-import { removeFalseyStrings } from "../../src/strings";
+import { removeFalseyStrings } from "../removeFalseyStrings";
 
 test("`removeFalseyStrings` fn", function(assert) {
   const actual = ["a", "b", "c", "", false, undefined, 0, void 0, null];

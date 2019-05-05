@@ -16,10 +16,11 @@ flatMapAlt = f => x => [].concat(...x.map(f));
 // implemented using own lib fns
 flatMapAlt = f => x => flatten (map (f) (x));
 flatMapAlt = f => x =>
-  compose(
-    flatten,
-    map(f)
-  )(x);
+  compose
+    (flatten)
+    (map (f))
+    (x)
+;
 
 /**
  * @param {function(*): *} f

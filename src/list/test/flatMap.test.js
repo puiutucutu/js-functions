@@ -1,5 +1,5 @@
 import test from "tape";
-import { flatMap } from "../src/list/flatMap";
+import { flatMap } from "../flatMap";
 
 test("`flatMap` returns expected value", function(assert) {
   const nums = [1, 2, 3];
