@@ -8,7 +8,7 @@ test("`pipe` function", function(t) {
   t.deepEqual(
     pipe (addOne, multiplyTwo) (1),
     4,
-    "returns expected value when supplied non array"
+    "returns expected value when operation on non-array type"
   );
 
   const addsOne = xs => xs.map(x => x + 1);
@@ -17,7 +17,7 @@ test("`pipe` function", function(t) {
   t.deepEqual(
     pipe (addsOne, multipliesByTwo) ([1, 2, 3]),
     [4, 6, 8],
-    "returns expected value when supplied array"
+    "returns expected value when operating on array type"
   );
 
   t.end();
