@@ -82,6 +82,8 @@ Review this.
 * https://github.com/1-liners/1-liners/blob/master/module/composeAll.js
 
 ```js
+// composes :: ([(a -> b), (b -> c), ...(y -> z)]) => a => z
+
 const compose = f => g => x => f(g(x));
 const composes = fns => fns.reduce((f, g) => x => f(g(x)));
 ```
