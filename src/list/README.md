@@ -81,9 +81,40 @@ Review this.
 
 * https://github.com/1-liners/1-liners/blob/master/module/composeAll.js
 
+```
+composes :: ([(a -> b), (b -> c), ...(y -> z)]) => a => z
+```
+
+All of the following examples work. The fns `composesA` and `composesB` 
+return the same result, but `composesA` looks weird because the final 
+the final return function (prior to the entire function body is executed) is 
+coming from inside the `reduce` closure itself.
+
 ```js
-// composes :: ([(a -> b), (b -> c), ...(y -> z)]) => a => z
+const log = (...args) => console.log(...args);
+const addTwo = x => x + 2;
+const addThree = x => x * 3;
 
 const compose = f => g => x => f(g(x));
-const composes = fns => fns.reduce((f, g) => x => f(g(x)));
+const composesA = (...fns) => fns.reduce((f, g) => x => f(g(x)));
+const composesB = (...fns) => x => fns.reduce((f, g) => f(g(x)));
+
+log(
+  compose(addTwo)(addThree)(5)
+); //=> 17
+
+log(
+  composesA(addTwo, addThree)(5)
+); //=> 17
+
+log(
+  composesB(addTwo, addThree)(5)
+); //=> 17
+
+const reduce = f => accumulator => xs => Array.prototype.reduce.call
+(
+  xs,
+  uncurry(f),
+  accumulator
+)
 ```
