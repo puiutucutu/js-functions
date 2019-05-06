@@ -5,6 +5,7 @@ import { reduce } from "./native";
  *
  * @param {...Function} fns Each fn must have an arity of 1
  * @return {function(U): T} Some value `x` reduced over each fn of fns
+ * @signature pipe :: ([(a -> b), (b -> c), ..., (y -> z)]) -> a -> z
  */
 const pipe = (...fns) => x => reduce
   (acc => f => f(acc))
