@@ -68,3 +68,9 @@ const flattenDeepAlternateES6 = xs =>
 ```
 
 Probably best to use a generator solution to avoid memory size issues.
+
+## Pipe
+
+Review this implementation:
+
+* https://github.com/1-liners/1-liners/blob/master/module/pipe.js
