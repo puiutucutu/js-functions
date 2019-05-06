@@ -99,6 +99,22 @@ const compose = f => g => x => f(g(x));
 const composesA = (...fns) => fns.reduce((f, g) => x => f(g(x)));
 const composesB = (...fns) => x => fns.reduce((f, g) => f(g(x)));
 
+function composesA_ES5(...fns) {
+  return fns.reduce(function(f, g) {
+    return function(x) {
+      return f(g(x));
+    };
+  });
+}
+
+function composesB_ES5(...fns) {
+  return function(x) {
+    return fns.reduce(function(f, g) {
+      return f(g(x));
+    });
+  };
+}
+
 log(
   compose(addTwo)(addThree)(5)
 ); //=> 17
