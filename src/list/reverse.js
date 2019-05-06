@@ -1,5 +1,5 @@
 import { clone } from "./clone";
 
-const reverse = xs => Array.prototype.reverse.call(xs);
+const reverse = xs => Array.prototype.reverse.call(clone(xs));
 
 export { reverse };
