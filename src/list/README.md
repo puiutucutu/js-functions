@@ -86,8 +86,8 @@ composes :: ([(a -> b), (b -> c), ...(y -> z)]) => a => z
 ```
 
 All of the following examples work. The fns `composesA` and `composesB` 
-return the same result, but `composesA` looks weird because the final 
-the final return function (prior to the entire function body is executed) is 
+return the same result, but `composesA` looks weird because the final return 
+function (prior to the entire function body is executed) is 
 coming from inside the `reduce` closure itself.
 
 ```js
