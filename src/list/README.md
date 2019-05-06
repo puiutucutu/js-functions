@@ -98,7 +98,15 @@ const addThree = x => x * 3;
 const compose = f => g => x => f(g(x));
 const composesA = (...fns) => fns.reduce((f, g) => x => f(g(x)));
 const composesB = (...fns) => x => fns.reduce((f, g) => f(g(x)));
-
+const composesB_ReducePrototypeCall = (...fns) => x =>   
+  Array.prototype.reduce.call(fns, ((f,g) => f(g(x))))
+  
+const composesB_CurriedReduceCall = (...fns) => x =>   
+  Array.prototype.reduce.call(
+    fns, 
+    ((f,g) => f(g(x)))
+  )
+  
 function composesA_ES5(...fns) {
   return fns.reduce(function(f, g) {
     return function(x) {
@@ -125,6 +133,10 @@ log(
 
 log(
   composesB(addTwo, addThree)(5)
+); //=> 17
+
+log(
+  composesB_ReducePrototypeCall(addTwo, addThree)(5)
 ); //=> 17
 
 const reduce = f => accumulator => xs => Array.prototype.reduce.call
