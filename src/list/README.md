@@ -74,3 +74,14 @@ Probably best to use a generator solution to avoid memory size issues.
 Review this implementation:
 
 * https://github.com/1-liners/1-liners/blob/master/module/pipe.js
+
+## Compose
+
+Review this.
+
+* https://github.com/1-liners/1-liners/blob/master/module/composeAll.js
+
+```js
+const compose = f => g => x => f(g(x));
+const composes = fns => fns.reduce((f, g) => x => f(g(x)));
+```
