@@ -139,6 +139,10 @@ log(
   composesB_ReducePrototypeCall(addTwo, addThree)(5)
 ); //=> 17
 
+log(
+  composesB_CurriedReduceCall(addTwo, addThree)(5)
+); //=> 17
+
 const reduce = f => accumulator => xs => Array.prototype.reduce.call
 (
   xs,
