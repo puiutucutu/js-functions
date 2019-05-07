@@ -1,7 +1,7 @@
 import { pipe } from "./pipe";
 
 /**
- * Applies a list of functions over a list. Each function must be unary and take a list as the parameter.
+ * Applies a list of functions over a list. Each function must be unary and take a list as the only parameter.
  *
  * applyMany :: ((a -> b), (b -> c), ...(y -> z)) -> [a] -> [z]
  *
