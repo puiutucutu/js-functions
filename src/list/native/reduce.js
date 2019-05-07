@@ -4,13 +4,13 @@ import { uncurry } from "../uncurry";
  * reduce :: (a, b) => (a) => (b[]) -> a[]
  * reduce :: ((a -> b) -> a) -> a -> [b] -> a
  *
- * @param {function(accumulator: T, currentValue: U)} f
+ * @param {function(accumulator: T, currentValue: U)} reducer
  * @return {function(initialValue: T): function(xs: U[]): (T|*)}
  */
-const reduce = f => accumulator => xs => Array.prototype.reduce.call
+const reduce = reducer => accumulator => xs => Array.prototype.reduce.call
 (
   xs,
-  uncurry(f),
+  uncurry(reducer),
   accumulator
 );
 
