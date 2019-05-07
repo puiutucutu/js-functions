@@ -1,5 +1,5 @@
 /**
- * compose :: (a -> b) -> (b -> c) -> a -> c
+ * compose :: (b -> c) -> (a -> b) -> a -> c
  *
  * @param {Function} f
  * @return {function(g: Function): function(x: String|Number|Array|Object): *}
