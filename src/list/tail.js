@@ -1,3 +1,3 @@
-const tail = ([head, ...tail]) => tail;
+const tail = ([, ...x]) => x;
 
 export { tail };
