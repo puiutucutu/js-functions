@@ -1,3 +1,12 @@
+import { reduceRight } from './native'
+
+const composeWithCurriedReduceRight = (...fns) => x =>
+  reduceRight
+  ((acc) => f => f(acc))
+  (x)
+  (fns)
+;
+
 /**
  * composes :: ((z -> y), (x -> y), ... (b -> a)) -> z -> a
  *
