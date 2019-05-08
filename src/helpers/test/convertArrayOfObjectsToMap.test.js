@@ -13,7 +13,7 @@ test("convertArrayOfObjectsToMap", function(t) {
     "mercedes": { id: 2, brand: "mercedes", model: "S Class"}
   }
 
-  const expected = convertArrayOfObjectsToMap(data, "brand");
+  const expected = convertArrayOfObjectsToMap ("brand") (data);
 
   t.deepEqual(actual, expected, "returns expected result");
   t.end();

@@ -1,11 +1,10 @@
 const prototypeLessObject = Object.create(null);
 
 /**
- * @param {*[]} items
  * @param {String} propKeyName
- * @return {{ k: string, v: * }}
+ * @return {function(*[]): { k: string, v: * }}
  */
-const convertArrayOfObjectsToMap = (items, propKeyName) =>
+const convertArrayOfObjectsToMap = propKeyName => items =>
   items.reduce(
     (obj, item) => ({
       ...obj,
