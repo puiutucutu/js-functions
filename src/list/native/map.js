@@ -1,6 +1,8 @@
 import { apply } from "../apply";
 
 /**
+ * map :: (a -> b) -> [a] -> [b]
+ *
  * @param {function(a): b} f {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax}
  * @return {function(xs: a[]): b[]}
  */
