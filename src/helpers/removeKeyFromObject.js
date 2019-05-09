@@ -1,7 +1,7 @@
 import { createMap } from "./createMap";
-import { compose } from '../list'
 import { reduce } from '../list/native'
 import { filter } from '../list/native'
+import { compose } from '../list'
 import { keysOf } from './keysOf'
 
 const Map = createMap();
