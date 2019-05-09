@@ -1,8 +1,8 @@
 import { createMap } from "./createMap";
 import { reduce } from '../list/native'
-import { filter } from '../list/native'
 import { compose } from '../list'
 import { keysOf } from './keysOf'
+import { removeItem } from './removeItem'
 
 const Map = createMap();
 
@@ -19,7 +19,7 @@ const Map = createMap();
 const removeKeyFromObject = key => obj =>
   compose
     (reduce(map => k => ({ ...map, [k]: obj[k] })) (Map))
-    (filter(k => k !== key))
+    (removeItem (key))
     (keysOf(obj))
 ;
 
