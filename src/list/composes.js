@@ -8,9 +8,9 @@ import { reduceRight } from './native'
  */
 const composes = (...fns) => x =>
   reduceRight
-  ((acc) => f => f(acc))
-  (x)
-  (fns)
+    ((acc) => f => f(acc))
+    (x)
+    (fns)
 ;
 
 export { composes };
