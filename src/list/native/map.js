@@ -3,7 +3,8 @@ import { uncurryThree } from "../uncurryThree";
 
 const mapNondeclarative = f => xs => Array.prototype.map.call(xs, apply(f));
 
-const mapUncurriedManually = f => xs => Array.prototype.map.call(
+const mapUncurriedManually = f => xs => Array.prototype.map.call
+(
   xs,
   (currentValue, index, array) => f (currentValue) (index) (array)
 );
