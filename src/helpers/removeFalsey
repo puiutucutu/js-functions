@@ -1,5 +1,0 @@
-import { filter } from "../list/native/filter";
-
-const removeFalseyValues(xs) => filter (x => !!x) (xs);
-
-export { removeFalseyValues };
