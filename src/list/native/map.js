@@ -23,8 +23,14 @@ const map = f => xs => Array.prototype.map.call(
 
 const doubled = nums =>
   map
-  (num => currIndex => original => num * 2)
-  (nums)
+    (currentValue => currIndex => original => currentValue * 2)
+    (nums)
+;
+
+const doubledConcise = nums =>
+  map
+    (x => i => xs => x * 2)
+    (nums)
 ;
 
 const nums = [1,2,3];
