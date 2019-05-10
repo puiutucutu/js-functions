@@ -6,7 +6,7 @@ import { isArray } from "../src/helpers/isArray";
 
 const flatten = xs => foldl (concat) ([]) (xs);
 const flattener = xs => flatten(
-  map (x => (isArray(x) ? flattener(x) : x)) (xs)
+  map (x => i => xs => (isArray(x) ? flattener(x) : x)) (xs)
 );
 
 const xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
