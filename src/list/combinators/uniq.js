@@ -4,8 +4,8 @@ import { includes } from "../includes";
 /**
  * uniq :: [a] -> [a]
  *
- * @param {T[]} xs
- * @return {T[]}
+ * @param {*[]} xs
+ * @return {*[]}
  */
 const uniq = xs =>
   reduce
