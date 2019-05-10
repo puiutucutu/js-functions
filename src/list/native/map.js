@@ -1,7 +1,7 @@
 import { apply } from "../apply";
 import { uncurryThree } from "../uncurryThree";
 
-const mapUndeclarative = f => xs => Array.prototype.map.call(xs, apply(f));
+const mapNondeclarative = f => xs => Array.prototype.map.call(xs, apply(f));
 
 const mapManuallyUncurried = f => xs => Array.prototype.map.call(
   xs,
