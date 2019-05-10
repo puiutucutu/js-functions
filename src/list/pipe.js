@@ -2,9 +2,9 @@ import { reduce } from "./native";
 
 const pipeCurriedReduce = (...fns) => x =>
   reduce
-  (acc => f => f(acc))
-  (x)
-  (fns)
+    (acc => f => f(acc))
+    (x)
+    (fns)
 ;
 
 /**
