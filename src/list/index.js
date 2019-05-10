@@ -1,15 +1,24 @@
+import * as combinators from "./combinators";
 import * as native from "./native";
-export { native };
+export { combinators, native };
 
 export { apply } from "./apply";
 export { applyMany } from "./applyMany";
+export { clone } from "./clone";
 export { compose } from "./compose";
 export { composes } from "./composes";
 export { concat } from "./concat";
 export { filter } from "./filter";
 export { flatMap } from "./flatMap";
 export { flatten } from "./flatten";
+export { flattener } from "./flattener";
+export { head } from "./head";
+export { includes } from "./includes";
+export { length } from "./length";
 export { map } from "./map";
 export { pipe } from "./pipe";
 export { reduce } from "./reduce";
+export { reverse } from "./reverse";
+export { tail } from "./tail";
 export { uncurry } from "./uncurry";
+export { uncurryThree } from "./uncurryThree";
