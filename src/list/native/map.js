@@ -19,7 +19,7 @@ const map = f => xs => Array.prototype.map.call(
   uncurryThree(f)
 );
 
-/*
+/* example */
 
 const doubled = nums =>
   map
@@ -27,15 +27,9 @@ const doubled = nums =>
     (nums)
 ;
 
-const doubledConcise = nums =>
-  map
-    (x => i => xs => x * 2)
-    (nums)
-;
+const doubledConcise = nums => map (x => i => xs => x * 2) (nums);
 
 const nums = [1,2,3];
 const doubledNums = doubled(nums); //=> [2,4,6]
-
-*/
 
 export { map };
