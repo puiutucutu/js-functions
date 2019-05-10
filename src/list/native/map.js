@@ -19,4 +19,17 @@ const map = f => xs => Array.prototype.map.call(
   uncurryThree(f)
 );
 
+/*
+
+const doubled = nums =>
+  map
+  (num => currIndex => original => num * 2)
+  (nums)
+;
+
+const nums = [1,2,3];
+const doubledNums = doubled(nums); //=> [2,4,6]
+
+*/
+
 export { map };
