@@ -1,4 +1,4 @@
-import { filter } from "../list/native"
+import { filter } from "../list";
 
 /**
  * Immutably removes an element from an array.
@@ -10,4 +10,4 @@ import { filter } from "../list/native"
  */
 const removeItem = y => xs => filter (x => x !== y) (xs);
 
-export { removeItem }
+export { removeItem };

@@ -1,18 +1,13 @@
 /**
- * @param {function(*): *} mapper
- * @return {function(x: *[]): *[]}
+ * map :: (a -> b) -> [a] -> [b]
+ *
+ * @param {function(a): b} f {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax}
+ * @return {function(xs: a[]): b[]}
  */
-function map(mapper) {
-  return function(n) {
-    const mapped = [],
-      len = n.length;
-
-    for (let i = 0; i < len; i++) {
-      mapped.push(mapper(n[i]));
-    }
-
-    return mapped;
-  };
-}
+const map = f => xs => Array.prototype.map.call
+(
+  xs,
+  (currentValue, index, array) => f (currentValue)
+);
 
 export { map };

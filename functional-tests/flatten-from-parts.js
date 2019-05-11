@@ -1,7 +1,5 @@
 import test from "tape";
-import { concat } from "../src/list";
-import { map } from "../src/list/native";
-import { foldl } from "../src/list/native/foldl";
+import { concat, foldl, map  } from "../src/list";
 import { isArray } from "../src/helpers/isArray";
 
 const flatten = xs => foldl (concat) ([]) (xs);

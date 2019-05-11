@@ -1,6 +1,5 @@
 import { createMap } from "./createMap";
-import { reduce } from '../list/native'
-import { compose } from '../list'
+import { compose, reduce } from '../list'
 import { keysOf } from './keysOf'
 import { removeItem } from './removeItem'
 

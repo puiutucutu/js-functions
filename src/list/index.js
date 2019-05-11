@@ -1,6 +1,6 @@
 import * as combinators from "./combinators";
-import * as native from "./native";
-export { combinators, native };
+import * as reimplementations from "./reimplementations";
+export { combinators, reimplementations };
 
 export { apply } from "./apply";
 export { applyMany } from "./applyMany";
@@ -12,12 +12,15 @@ export { filter } from "./filter";
 export { flatMap } from "./flatMap";
 export { flatten } from "./flatten";
 export { flattener } from "./flattener";
+export { foldl } from "./foldl";
 export { head } from "./head";
 export { includes } from "./includes";
 export { length } from "./length";
 export { map } from "./map";
+export { mapWithNativeCallback } from "./mapWithNativeCallback";
 export { pipe } from "./pipe";
 export { reduce } from "./reduce";
+export { reduceRight } from "./reduceRight";
 export { reverse } from "./reverse";
 export { tail } from "./tail";
 export { uncurry } from "./uncurry";

@@ -1,4 +1,4 @@
-import { reduce } from "../native/reduce";
+import { reduce } from "../reduce";
 import { includes } from "../includes";
 
 /**

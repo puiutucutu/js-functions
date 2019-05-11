@@ -1,20 +1,8 @@
 /**
  * @param {function(T): boolean} predicate
+ * @signature (a -> Bool) -> [a] -> [a]
  * @return {function(T[]): T[]}
  */
-function filter(predicate) {
-  return function(n) {
-    const collection = [],
-      len = n.length;
-
-    for (let i = 0; i < len; i++) {
-      if (predicate(n[i]) === true) {
-        collection.push(n[i]);
-      }
-    }
-
-    return collection;
-  };
-}
+const filter = predicate => xs => Array.prototype.filter.bind (xs) (predicate);
 
 export { filter };

@@ -1,5 +1,5 @@
-import { filter } from "../list/native/filter";
+import { filter } from "../list";
 
-const removeFalsey(xs) => filter (x => !!x) (xs);
+const removeFalsey = xs => filter(x => !!x)(xs);
 
 export { removeFalsey };

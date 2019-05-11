@@ -1,22 +1,16 @@
+import { uncurry } from "./uncurry";
+
 /**
+ * reduce :: ((a -> b) -> a) -> a -> [b] -> a
+ *
  * @param {function(accumulator: T, currentValue: U)} reducer
- * @return {function(initialValue: T): function(items: U[]): (T|*)}
+ * @return {function(accumulatorInitialValue: T): function(xs: U[]): (T|*)}
  */
-import { getObjectType } from "../validation";
-
-const reduce = reducer => initialValue => items => {
-  if (getObjectType(items) !== "[object Array]") {
-    throw new TypeError("`items` must be an array");
-  }
-
-  let accumulator = initialValue;
-
-  const len = items.length;
-  for (let i = 0; i < len; i++) {
-    accumulator = reducer (accumulator) (items[i]);
-  }
-
-  return accumulator;
-};
+const reduce = reducer => accumulatorInitialValue => xs => Array.prototype.reduce.call
+(
+  xs,
+  uncurry (reducer), //=> reducer (accumulator, currentValue)
+  accumulatorInitialValue
+);
 
 export { reduce };

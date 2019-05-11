@@ -1,4 +1,4 @@
-import { uncurryThree } from "../uncurryThree";
+import { uncurryThree } from "./uncurryThree";
 
 /**
  * map :: (a -> b) -> [a] -> [b]

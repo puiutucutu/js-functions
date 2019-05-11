@@ -1,4 +1,4 @@
-import { map } from "./map";
+import { map } from "./reimplementations";
 import { flatten } from "./flatten";
 import { compose } from "./compose";
 

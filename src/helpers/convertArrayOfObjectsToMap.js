@@ -1,4 +1,4 @@
-import { reduce } from '../list/native'
+import { reduce } from '../list'
 import { createMap } from './createMap'
 
 const Map = createMap();

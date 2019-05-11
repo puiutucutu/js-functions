@@ -1,4 +1,4 @@
-import { reduceRight } from './native'
+import { reduceRight } from './reduceRight'
 
 /**
  * composes :: ((z -> y), (x -> y), ... (b -> a)) -> z -> a

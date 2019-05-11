@@ -1,4 +1,4 @@
-import { uncurry } from "../uncurry";
+import { uncurry } from "./uncurry";
 
 /**
  * reduce :: ((a -> b) -> a) -> a -> [b] -> a

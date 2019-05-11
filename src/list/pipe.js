@@ -1,4 +1,4 @@
-import { reduce } from "./native";
+import { reduce } from "./reduce";
 
 /**
  * Applies a list of functions to a single value.
