@@ -9,7 +9,7 @@ import { uncurry } from "./uncurry";
 const reduceRight = reducer => accumulatorInitialValue => xs => Array.prototype.reduceRight.call
 (
   xs,
-  uncurry(reducer),
+  uncurry (reducer),
   accumulatorInitialValue
 );
 
