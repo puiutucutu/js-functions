@@ -12,10 +12,7 @@ const lengthRecursive = xs => {
     throw new TypeError("Argument `xs` must be of type array");
   }
 
-  return toString(xs) === ""
-    ? 0
-    : 1 + lengthRecursive(tail (xs))
-  ;
+  return toString(xs) === "" ? 0 : 1 + lengthRecursive(tail(xs));
 };
 
 export { lengthRecursive };
