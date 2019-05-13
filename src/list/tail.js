@@ -2,7 +2,7 @@
  * tail :: [a] -> [a]
  *
  * @param {*[]}
- * @return {a}
+ * @return {*}
  */
 const tail = ([, ...xs]) => xs;
 
