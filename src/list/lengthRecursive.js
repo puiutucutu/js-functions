@@ -9,7 +9,7 @@ const toString = x => x.toString();
  */
 const lengthRecursive = xs => {
   if (!isArray(xs)) {
-    throw new TypeError("Argument `xs` must be of type array");
+    throw new TypeError("Argument for `xs` must be of type array");
   }
 
   return toString(xs) === "" ? 0 : 1 + lengthRecursive(tail(xs));
