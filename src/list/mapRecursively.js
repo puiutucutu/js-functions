@@ -6,7 +6,7 @@ import { tail } from "./tail";
 const map = f => xs =>
   length(xs) === 0
     ? []
-    : [f(head(xs)), ...map(f)(tail(xs))]
+    : [f (head (xs)), ...map (f) (tail (xs))]
   ;
 
 export { map as mapRecursively };
