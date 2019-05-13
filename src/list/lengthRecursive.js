@@ -13,7 +13,7 @@ function lengthRecursive(xs) {
   }
 
   const [, ...tail] = xs;
-  return toString(xs) === "" ? 0: lengthRecursive(tail) + 1;
+  return toString(xs) === "" ? 0 : lengthRecursive(tail) + 1;
 }
 
 export { lengthRecursive };
