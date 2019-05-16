@@ -15,7 +15,7 @@ import { reduce } from "../list";
  */
 const countUniques = xs =>
   reduce
-    (acc => s => s in acc ? { ...acc, [s]: acc[s] + 1 } : { ...acc, [s]: 1 })
+    (acc => x => x in acc ? { ...acc, [x]: acc[x] + 1 } : { ...acc, [x]: 1 })
     ({})
     (xs)
 ;
