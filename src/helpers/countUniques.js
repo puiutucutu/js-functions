@@ -1,8 +1,8 @@
 import { reduce } from "../list";
 
 /**
- * Takes a 1-d array of strings and creates an object with unique strings as
- * the key names and the frequency count of each string as the key value.
+ * Takes a 1-d array of strings or numbers and creates an object with unique
+ * values as the key names and the frequency count of each as the key value.
  *
  * Example
  *
@@ -11,7 +11,7 @@ import { reduce } from "../list";
  *   value: 3
  * }
  *
- * @param {String[]} xs
+ * @param {String[]|Number[]} xs
  */
 const countUniques = xs =>
   reduce
