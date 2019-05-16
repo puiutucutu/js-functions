@@ -11,7 +11,7 @@ import { reduce } from "../list";
  *   value: 3
  * }
  *
- * @param {Array} xs
+ * @param {String[]} xs
  */
 const countUniques = xs =>
   reduce
