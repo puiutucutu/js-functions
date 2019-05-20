@@ -7,7 +7,7 @@ test("convertArrayOfObjectsToMap", function(t) {
     { id: 1, brand: "bmw", model: "7 Series" },
     { id: 2, brand: "mercedes", model: "S Class"}
   ];
-  
+
   const actual = {
     "bmw": { id: 1, brand: "bmw", model: "7 Series" },
     "mercedes": { id: 2, brand: "mercedes", model: "S Class"}
