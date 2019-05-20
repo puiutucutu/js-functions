@@ -1,4 +1,4 @@
-import { filter } from "../list";
+import { filter } from "../filter";
 
 /**
  * Immutably removes an element from an array.

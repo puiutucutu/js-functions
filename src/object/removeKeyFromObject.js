@@ -1,7 +1,7 @@
 import { createMap } from "../object/createMap";
 import { compose, reduce } from '../list'
 import { getKeys } from './getKeys'
-import { removeItem } from '../helpers/removeItem'
+import { removeItem } from '../list/combinators'
 
 const Map = createMap();
 
