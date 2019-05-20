@@ -1,6 +1,6 @@
 import { createMap } from "./createMap";
 import { compose, reduce } from '../list'
-import { keysOf } from './keysOf'
+import { keys } from './keys'
 import { removeItem } from './removeItem'
 
 const Map = createMap();
@@ -19,7 +19,7 @@ const removeKeyFromObject = key => obj =>
   compose
     (reduce(map => k => ({ ...map, [k]: obj[k] })) (Map))
     (removeItem (key))
-    (keysOf(obj))
+    (keys (obj))
 ;
 
 export { removeKeyFromObject };
