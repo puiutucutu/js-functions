@@ -1,6 +1,6 @@
 import { createMap } from "./createMap";
 import { compose, reduce } from '../list'
-import { keys } from './keys'
+import { keys } from '../object/keys'
 import { removeItem } from './removeItem'
 
 const Map = createMap();
