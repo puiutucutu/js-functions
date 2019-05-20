@@ -17,5 +17,11 @@ test("pick", function(t) {
     "returns expected result"
   );
 
+  t.deepEqual(
+    {},
+    pick ([]) (obj),
+    "returns empty object when no keys are provided"
+  );
+
   t.end();
 });
