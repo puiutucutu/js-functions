@@ -1,5 +1,5 @@
 import { includes, reduce } from "../list"
-import { keysOf } from '../helpers'
+import { keys } from '../helpers'
 
 /**
  * ([a]) -> ({a}) -> {a}
@@ -16,7 +16,7 @@ const omit = keys => o => {
       : { ...acc, [k]: o[k] }
     )
     ({})
-    (keysOf(o))
+    (keys(o))
   ;
 }
 

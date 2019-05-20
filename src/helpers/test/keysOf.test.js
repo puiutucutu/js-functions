@@ -1,7 +1,7 @@
 import test from "tape";
-import { keysOf } from "../keysOf";
+import { keys } from "../keys";
 
-test("keysOf", function(t) {
+test("keys", function(t) {
   const obj = {
     id: 123,
     brand: "bmw",
@@ -9,7 +9,7 @@ test("keysOf", function(t) {
   };
 
   const actual = ["id", "brand", "model"];
-  const expected = keysOf(obj);
+  const expected = keys (obj);
 
   t.deepEqual(actual, expected, "returns expected result");
   t.end();

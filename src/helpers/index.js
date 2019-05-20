@@ -1,6 +1,6 @@
 export { convertArrayOfObjectsToMap } from "./convertArrayOfObjectsToMap";
 export { createMap } from "./createMap";
-export { keysOf } from "./keysOf";
+export { keys } from "./keys";
 export { removeItem } from "./removeItem";
 export { removeKeyFromObject } from "./removeKeyFromObject";
 export { toHashmapById } from "./toHashmapById";
