@@ -1,7 +1,8 @@
 import test from "tape";
+import { removeFalsey } from '../../list/combinators/removeFalsey'
 import { convertArrayOfObjectsToMap } from '../convertArrayOfObjectsToMap'
 
-test("convertArrayOfObjectsToMap", function(t) {
+test("removeFalsey", function(t) {
 
   const data = [
     { id: 1, brand: "bmw", model: "7 Series" },
