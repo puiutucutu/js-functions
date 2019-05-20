@@ -7,7 +7,7 @@ import { getObjectType } from "./getObjectType";
 const isArray = arr =>
   !!Array.isArray
     ? Array.isArray(arr)
-    : getObjectType(arr) === '[object Array]'
+    : getObjectType(arr) === "[object Array]"
 ;
 
 export { isArray };
