@@ -2,7 +2,7 @@ import { includes, reduce } from "../list";
 import { keys } from "./keys";
 
 /**
- * ([a]) -> ({a}) -> {a}
+ * omit :: ([a]) -> ({a}) -> {a}
  *
  * @param {Array} ks
  * @return {function(o: Object): (Object)}
