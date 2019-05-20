@@ -4,19 +4,17 @@ import { keys } from '../helpers'
 /**
  * ([a]) -> ({a}) -> {a}
  *
- * @param {Array} keys
+ * @param {Array} ks
  * @return {function(o: Object): (Object)}
  */
-const omit = keys => o => {
-  const hasKey = includes (keys);
-
+const omit = ks => o => {
   return reduce
-    (acc => k => hasKey (k)
+    (acc => k => includes (k) (ks)
       ? { ...acc }
       : { ...acc, [k]: o[k] }
     )
     ({})
-    (keys(o))
+    (keys (o))
   ;
 }
 
