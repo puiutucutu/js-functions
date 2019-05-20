@@ -1,7 +1,7 @@
 /**
- * @param {function(T): boolean} predicate
+ * @param {function(*): Boolean} predicate
+ * @return {function([]): []}
  * @signature (a -> Bool) -> [a] -> [a]
- * @return {function(T[]): T[]}
  */
 const filter = predicate => xs => Array.prototype.filter.bind (xs) (predicate);
 
