@@ -1,5 +1,4 @@
 import { isArray } from "../validation/isArray";
-import { tail } from './tail'
 
 const toString = x => x.toString();
 
@@ -13,7 +12,7 @@ function lengthRecursive(xs) {
   }
 
   const [, ...tail] = xs;
-  return toString(xs) === "" ? 0: lengthRecursive(tail) + 1;
+  return toString(xs) === "" ? 0: lengthRecursive (tail) + 1;
 }
 
 export { lengthRecursive };
