@@ -17,7 +17,7 @@ const Map = createMap();
  */
 const removeKeyFromObject = key => obj =>
   compose
-    (reduce(map => k => ({ ...map, [k]: obj[k] })) (Map))
+    (reduce (map => k => ({ ...map, [k]: obj[k] })) (Map))
     (removeItem (key))
     (keys (obj))
 ;
