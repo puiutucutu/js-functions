@@ -1,6 +1,8 @@
 import { reduce } from "../list";
 
 /**
+ * Returns an object with the supplied keys removed.
+ *
  * ([a]) -> ({a}) -> {a}
  *
  * @param {Array} keys
