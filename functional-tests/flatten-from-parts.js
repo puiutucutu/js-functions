@@ -1,6 +1,6 @@
 import test from "tape";
 import { concat, foldl, map  } from "../src/list";
-import { isArray } from "../src/helpers/isArray";
+import { isArray } from "../src/validation/isArray";
 
 const flatten = xs => foldl (concat) ([]) (xs);
 const flattener = xs => flatten(

@@ -1,4 +1,4 @@
-import { isArray } from "../helpers/isArray";
+import { isArray } from "../validation/isArray";
 
 /**
  * Recursively flattens an array of items of varying arities into an array

@@ -1,3 +1,4 @@
+export { convertArrayOfObjectsToMap } from "./convertArrayOfObjectsToMap";
 export { createMap } from "./createMap";
 export { keys } from "./keys";
 export { omit } from "./omit";

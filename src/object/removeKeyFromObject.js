@@ -1,4 +1,4 @@
-import { createMap } from "../helpers/createMap";
+import { createMap } from "../object/createMap";
 import { compose, reduce } from '../list'
 import { keys } from '../object/keys'
 import { removeItem } from '../helpers/removeItem'
