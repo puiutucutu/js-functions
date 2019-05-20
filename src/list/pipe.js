@@ -1,5 +1,12 @@
 import { reduce } from "./reduce";
 
+// /**
+//  * @param {function} fns
+//  * @returns {*|(function(*=): *)}
+//  */
+// const pipe = (...fns) => fns.reduce((a, b) => arg => b(a(arg)));
+// const pipeAsync = (...fns) => fns.reduce((a, b) => async arg => await b(a(arg)));
+
 /**
  * Applies a list of functions to a single value.
  *
