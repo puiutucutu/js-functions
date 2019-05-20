@@ -5,15 +5,16 @@ const Map = createMap();
 
 /**
  * Takes an array of objects and converts them to a hashmap using the
- * supplied propName for the key access as in <K,V>.
+ * supplied key name.
  *
- * @param {String} propName
+ * @param {String} key
  * @return {function(*[]): {}}
  */
-const toHashmapByPropNameValue = propName => xs => reduce
-  (acc => x => ({ ...acc, [x[propName]]: x }))
-  (Map)
-  (xs)
+const toHashmapByPropNameValue = key => xs =>
+  reduce
+    (acc => x => ({ ...acc, [x[key]]: x }))
+    (Map)
+    (xs)
 ;
 
 export { toHashmapByPropNameValue };
