@@ -4,13 +4,13 @@ import { getKeys } from "./getKeys";
 /**
  * omit :: ([a]) -> ({a}) -> {a}
  *
- * @param {Array} ks
+ * @param {Array} keys
  * @return {function(o: Object): (Object)}
  */
-const omit = ks => o =>
+const omit = keys => o =>
   reduce
   (
-    acc => k => includes (k) (ks)
+    acc => k => includes (k) (keys)
     ? { ...acc }
     : { ...acc, [k]: o[k] }
   )
