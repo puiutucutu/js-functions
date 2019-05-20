@@ -1,5 +1,5 @@
 import { includes, reduce } from "../list";
-import { keys } from "./keys";
+import { getKeys } from "./getKeys";
 
 /**
  * omit :: ([a]) -> ({a}) -> {a}
@@ -15,6 +15,6 @@ const omit = ks => o =>
     : { ...acc, [k]: o[k] }
   )
   ({})
-  (keys (o));
+  (getKeys (o));
 
 export { omit };
