@@ -27,7 +27,7 @@ module.exports = [
     output: {
       file: pkg.browser,
       format: "umd",
-      name: "NicheDataFormatters"
+      name: "js-functions"
     },
     plugins: [
       resolve(),
