@@ -2,10 +2,14 @@
   "name": "js-functions",
   "version": "1.0.0",
   "description": "just a place to store functions",
-  "main": "index.js",
+  "main": "dist/js-functions.cjs.js",
+  "module": "dist/js-functions.esm.js",
+  "browser": "dist/js-functions.umd.js",
   "scripts": {
-    "test:functional": "tape -r @babel/register functional-tests/**/*.js | tap-spec",
-    "test:unit": "tape -r @babel/register src/**/*.test.js | tap-spec",
+    "build": "cross-env NODE_ENV=build rollup -c",
+    "coverage": "cross-env NODE_ENV=test nyc tape ./src/**/*.test.js",
+    "test:functional": "cross-env NODE_ENV=test tape -r @babel/register functional-tests/**/*.js | tap-spec",
+    "test:unit": "cross-env NODE_ENV=test tape -r @babel/register src/**/*.test.js | tap-spec",
     "test:watch": "nodemon --watch src --watch functional-tests -x \"npm run test:unit & npm run test:functional\"",
     "test:watch-unit": "nodemon --watch functional-tests -x \"npm run test:unit\"",
     "test:watch-functional": "nodemon --watch functional-tests -x \"npm run test:functional\"",
@@ -21,14 +25,36 @@
     "url": "https://github.com/puiutucutu/js-functions/issues"
   },
   "homepage": "https://github.com/puiutucutu/js-functions#readme",
+  "dependencies": {
+    "cross-env": "^5.2.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
     "@babel/preset-env": "^7.4.3",
     "@babel/register": "^7.4.0",
+    "babel-plugin-istanbul": "^5.1.4",
     "nodemon": "^1.19.0",
+    "nyc": "^14.1.1",
     "prettier": "^1.17.0",
+    "rollup": "^1.12.4",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
+    "rollup-plugin-terser": "^5.0.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.10.1"
+  },
+  "nyc": {
+    "require": [
+      "@babel/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }

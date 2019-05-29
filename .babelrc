@@ -1,13 +1,24 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "targets": {
-          "browsers": ["ie >= 11"]
-        },
-        "useBuiltIns": "usage"
-      }
-    ]
-  ]
+  "env": {
+    "test": {
+      "presets": ["@babel/preset-env"],
+      "plugins": ["@babel/plugin-proposal-export-namespace-from", "istanbul"]
+    },
+    "build": {
+      "exclude": "node_modules/**",
+      "plugins": ["@babel/plugin-proposal-export-namespace-from"],
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false,
+            "targets": {
+              "browsers": ["ie >= 11"]
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    }
+  }
 }
