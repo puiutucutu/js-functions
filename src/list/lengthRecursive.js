@@ -1,4 +1,4 @@
-import { isArray } from "../helpers/isArray";
+import { isArray } from "../validation/isArray";
 import { tail } from "./tail";
 
 const toString = x => x.toString();
