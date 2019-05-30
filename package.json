@@ -17,7 +17,7 @@
     "docs": "./node_modules/.bin/esdoc",
     "documentation": "./node_modules/documentation/bin/documentation.js build ./src/index.js -f md",
     "docs2": "./node_modules/.bin/documentation build src/object/createMap.js -f html -o docs",
-    "docs3": "./node_modules/.bin/documentation build src/object/*.js -f html -o docs"
+    "docs3": "./node_modules/.bin/documentation build src/object/** -f html -o docs"
   },
   "repository": {
     "type": "git",
