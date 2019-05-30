@@ -24,6 +24,7 @@ export { pipe } from "./pipe";
 export { reduce } from "./reduce";
 export { reduceRight } from "./reduceRight";
 export { reverse } from "./reverse";
+export { splitAt } from "./splitAt";
 export { sum } from "./sum";
 export { tail } from "./tail";
 export { uncurry } from "./uncurry";
