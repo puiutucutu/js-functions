@@ -5,7 +5,7 @@ const map = createMap();
 
 /**
  * Takes a 1-d array of strings or numbers and creates an object with unique
- * values as the key names and the frequency count of each as the key value.
+ * values as the key names and the frequency as the key value.
  *
  * Example
  *
