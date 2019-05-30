@@ -13,8 +13,8 @@ const omit = keys => o =>
   reduce
   (
     acc => k => includes (k) (keys)
-    ? { ...acc }
-    : { ...acc, [k]: o[k] }
+      ? { ...acc }
+      : { ...acc, [k]: o[k] }
   )
   ({})
   (getKeys (o));
