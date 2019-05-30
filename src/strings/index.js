@@ -6,6 +6,7 @@ export { joinWithNewLine } from "./joinWithNewLine";
 export { replace } from "./replace";
 export { removeCommas } from "./removeCommas";
 export { removeFalseyStrings } from "./removeFalseyStrings";
+export { removeNonDigits } from "./removeNonDigits";
 export { splitBy } from "./splitBy";
 export { splitByComma } from "./splitByComma";
 export { splitByNewLines } from "./splitByNewLines";
