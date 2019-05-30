@@ -1,7 +1,7 @@
 import { reduce } from "./reduce";
 
 /**
- * @type {reduce}
+ * @aka {reduce}
  */
 const foldl = reduce;
 
