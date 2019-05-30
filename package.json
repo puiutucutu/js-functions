@@ -14,7 +14,6 @@
     "test:watch-unit": "nodemon --watch functional-tests -x \"npm run test:unit\"",
     "test:watch-functional": "nodemon --watch functional-tests -x \"npm run test:functional\"",
     "prettify": "prettier --write src/**/*.js",
-    "docs": "./node_modules/.bin/esdoc",
     "documentation": "./node_modules/documentation/bin/documentation.js build ./src/index.js -f md",
     "docs2": "./node_modules/.bin/documentation build src/object/createMap.js -f html -o docs",
     "docs3": "./node_modules/.bin/documentation build src/object/** -f html -o docs"
@@ -40,8 +39,6 @@
     "@babel/register": "^7.4.0",
     "babel-plugin-istanbul": "^5.1.4",
     "documentation": "^11.0.0",
-    "esdoc": "^1.1.0",
-    "esdoc-standard-plugin": "^1.0.0",
     "nodemon": "^1.19.0",
     "nyc": "^14.1.1",
     "prettier": "^1.17.0",
