@@ -1,4 +1,7 @@
 import { reduce } from "../list";
+import { createMap } from "../object";
+
+const map = createMap();
 
 /**
  * Takes a 1-d array of strings or numbers and creates an object with unique
@@ -16,7 +19,7 @@ import { reduce } from "../list";
 const countUniques = xs =>
   reduce
     (acc => x => x in acc ? { ...acc, [x]: acc[x] + 1 } : { ...acc, [x]: 1 })
-    ({})
+    (map)
     (xs)
 ;
 
