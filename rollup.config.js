@@ -27,7 +27,7 @@ module.exports = [
     output: {
       file: pkg.browser,
       format: "umd",
-      name: "js-functions"
+      name: "jsFunctions"
     },
     plugins: [
       resolve(),
