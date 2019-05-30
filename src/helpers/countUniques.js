@@ -18,7 +18,11 @@ const map = createMap();
  */
 const countUniques = xs =>
   reduce
-    (acc => x => x in acc ? { ...acc, [x]: acc[x] + 1 } : { ...acc, [x]: 1 })
+    (
+      acc => x => x in acc
+        ? { ...acc, [x]: acc[x] + 1 }
+        : { ...acc, [x]: 1 }
+    )
     (map)
     (xs)
 ;
