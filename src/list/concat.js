@@ -1,3 +1,3 @@
-const concat = xs => y => Array.prototype.concat(xs, y);
+const concat = xs => x => Array.prototype.concat(xs, x);
 
 export { concat };
