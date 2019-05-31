@@ -7,7 +7,7 @@ import { getKeys } from "./getKeys";
  * omit :: ([a]) -> ({a}) -> {a}
  *
  * @param {String[]|Number[]} keys
- * @return {function(o: Object): (Object)}
+ * @return {function(obj: Object): (Object)}
  * @example
  *
  * const obj = {
@@ -19,14 +19,14 @@ import { getKeys } from "./getKeys";
  * omit (["id", "brand"]) (obj); //=> { model: "7 Series" }
  *
  */
-const omit = keys => o =>
+const omit = keys => obj =>
   reduce
   (
     acc => k => includes (k) (keys)
       ? { ...acc }
-      : { ...acc, [k]: o[k] }
+      : { ...acc, [k]: obj[k] }
   )
   ({})
-  (getKeys (o));
+  (getKeys (obj));
 
 export { omit };
