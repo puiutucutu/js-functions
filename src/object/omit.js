@@ -6,7 +6,7 @@ import { getKeys } from "./getKeys";
  *
  * omit :: ([a]) -> ({a}) -> {a}
  *
- * @param {Array} keys
+ * @param {String[]|Number[]} keys
  * @return {function(o: Object): (Object)}
  * @example
  *
