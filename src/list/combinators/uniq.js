@@ -4,12 +4,11 @@ import { includes } from "../includes";
 /**
  * uniq :: [a] -> [a]
  *
- * @param {*[]} xs
- * @return {*[]}
+ * @param {T[]} xs
+ * @return {T[]}
  * @example
  *
- * const nums = [1, 1, 1, 2, 3];
- * uniq (nums); // => [1, 2, 3]
+ * uniq ([1, 1, 1, 2, 3]); // => [1, 2, 3]
  *
  */
 const uniq = xs =>
