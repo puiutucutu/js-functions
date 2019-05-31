@@ -1,8 +1,8 @@
 /**
  * head :: [a] -> a
  *
- * @param {*[]} x
- * @return {*}
+ * @param {T[]} x
+ * @return {T}
  */
 const head = ([x]) => x;
 
