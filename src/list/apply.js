@@ -1,6 +1,6 @@
 /**
  * @param {Function} f
- * @return {*}
+ * @return {function(x: any): T}
  */
 const apply = f => x => f(x);
 
