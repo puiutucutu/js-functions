@@ -1,7 +1,7 @@
 /**
- * @param {*} a
+ * @param {*} x
  * @return {String}
  */
-const toString = a => a.toString();
+const toString = x => x.toString();
 
 export { toString };
