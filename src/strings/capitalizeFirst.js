@@ -1,6 +1,10 @@
 import { concat, head, tail } from "../list";
 import { join } from "./join";
 
+/**
+ * @param {String} x
+ * @return {String}
+ */
 const capitalizeFirst = x => !!x
   ? [x[0].toUpperCase()].concat(x.slice(1)).join("")
   : x

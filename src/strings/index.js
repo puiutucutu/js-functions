@@ -1,3 +1,4 @@
+export { capitalizeFirst } from "./capitalizeFirst";
 export { collapseToSingleSpace } from "./collapseToSingleSpace";
 export { collapseWhitespace } from "./collapseWhitespace";
 export { join } from "./join";
