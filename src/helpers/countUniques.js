@@ -9,12 +9,20 @@ const map = createMap();
  *
  * Example
  *
+ * ```js
  * {
  *   key: "John Smith"
  *   value: 3
  * }
+ * ```
  *
  * @param {String[]|Number[]} xs
+ * @return {Object}
+ * @example
+ *
+ * countUniques (["bmw", "mercedes", "bmw", "volkswagen", "bmw", "porsche"]));
+ * //=> { bmw: 3, mercedes: 1, volkswagen: 1, porsche: 1 }
+ *
  */
 const countUniques = xs =>
   reduce

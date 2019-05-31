@@ -26,6 +26,16 @@
               
                 
                 <li><a
+                  href='#countuniques'
+                  class="">
+                  countUniques
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#tostring'
                   class="">
                   toString
@@ -689,6 +699,88 @@
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='countuniques'>
+      countUniques
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Takes a 1-d array of strings or numbers and creates an object with unique
+values as the key names and the frequency as the key value.</p>
+<p>Example</p>
+<pre class='hljs'>{
+  <span class="hljs-attr">key</span>: <span class="hljs-string">"John Smith"</span>
+  value: <span class="hljs-number">3</span>
+}</pre>
+
+    <div class='pre p1 fill-light mt0'>countUniques</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>xs</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>))</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>countUniques ([<span class="hljs-string">"bmw"</span>, <span class="hljs-string">"mercedes"</span>, <span class="hljs-string">"bmw"</span>, <span class="hljs-string">"volkswagen"</span>, <span class="hljs-string">"bmw"</span>, <span class="hljs-string">"porsche"</span>]));
+<span class="hljs-comment">//=&gt; { bmw: 3, mercedes: 1, volkswagen: 1, porsche: 1 }</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='tostring'>
       toString
     </h3>
@@ -1319,7 +1411,8 @@
   </div>
   
 
-  
+  <p>Applies some function <code>f</code> over some argument <code>x</code>.</p>
+
     <div class='pre p1 fill-light mt0'>apply</div>
   
   
