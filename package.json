@@ -14,9 +14,9 @@
     "test:watch-unit": "nodemon --watch functional-tests -x \"npm run test:unit\"",
     "test:watch-functional": "nodemon --watch functional-tests -x \"npm run test:functional\"",
     "prettify": "prettier --write src/**/*.js",
-    "documentation": "./node_modules/documentation/bin/documentation.js build ./src/index.js -f md",
-    "docs2": "./node_modules/.bin/documentation build src/object/createMap.js -f html -o docs",
-    "docs3": "./node_modules/.bin/documentation build src/object/** -f html -o docs"
+    "documentation": "npm run documentation:html & npm run documentation:markdown",
+    "documentation:html": "./node_modules/.bin/documentation build ./src/index.js -f html -o ./docs/html",
+    "documentation:markdown": "./node_modules/.bin/documentation build ./src/index.js -f md > ./docs/documentation.md"
   },
   "repository": {
     "type": "git",
