@@ -4,7 +4,7 @@ import { uncurry } from "./uncurry";
  * reduce :: ((a -> b) -> a) -> a -> [b] -> a
  *
  * @param {function(accumulator: T): function(currentValue: U)} reducer
- * @return {function(accumulatorInitialValue: T): function(xs: U[]): (T)}
+ * @return {function(accumulatorInitialValue: T): function(xs: U[]): (T|*)}
  * @example
  *
  * reduce
