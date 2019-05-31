@@ -4,6 +4,6 @@
  * @param {*[]}
  * @return {*}
  */
-const tail = ([, ...xs]) => xs;
+const tail = ([x, ...xs]) => xs;
 
 export { tail };
