@@ -224,9 +224,9 @@ Returns **[String][134]**
 
 ### Parameters
 
--   `f` **function (any)** 
+-   `f` **[Function][139]** 
 
-Returns **function (U): T** 
+Returns **function (x: any): T** 
 
 ## applyMany
 
@@ -615,13 +615,13 @@ Returns **[String][134]**
 
 ## replace
 
-replace :: (a) => (a) => (a) -> a
+replace :: (a) -> (a) -> (a) -> a
 
 ### Parameters
 
 -   `searchValue` **([String][134] \| [RegExp][142])** 
 
-Returns **function (a: [string][134]): function (a: [string][134]): [string][134]** 
+Returns **function (replaceValue: [string][134]): function (target: [string][134]): [string][134]** 
 
 ## removeCommas
 
