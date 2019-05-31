@@ -2,9 +2,9 @@
  * replace :: (a) -> (a) -> (a) -> a
  *
  * @param {String|RegExp} searchValue
- * @return {function(a: string): function(a: string): string}
+ * @return {function(replaceValue: string): function(target: string): string}
  */
-const replace = searchValue => replaceValue => s =>
-  String.prototype.replace.call(s, searchValue, replaceValue);
+const replace = searchValue => replaceValue => target =>
+  String.prototype.replace.call(target, searchValue, replaceValue);
 
 export { replace };
