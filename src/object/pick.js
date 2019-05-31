@@ -7,6 +7,16 @@ import { reduce } from "../list";
  *
  * @param {Array} keys
  * @return {function(obj: Object): (Object)}
+ * @example
+ *
+ * const obj = {
+ *   id: 123,
+ *   brand: "bmw",
+ *   model: "7 Series"
+ * };
+ *
+ * pick (["id", "brand"]) (obj); //=> { id: 123, brand: "bmw" }
+ *
  */
 const pick = keys => obj =>
   reduce
