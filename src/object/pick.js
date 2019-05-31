@@ -5,7 +5,7 @@ import { reduce } from "../list";
  *
  * pick :: ([a]) -> ({a}) -> {a}
  *
- * @param {Array} keys
+ * @param {String[]|Number[]} keys
  * @return {function(obj: Object): (Object)}
  * @example
  *
