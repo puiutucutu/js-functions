@@ -6,6 +6,11 @@ import { includes } from "../includes";
  *
  * @param {*[]} xs
  * @return {*[]}
+ * @example
+ *
+ * const nums = [1, 1, 1, 2, 3];
+ * uniq (nums); // => [1, 2, 3]
+ *
  */
 const uniq = xs =>
   reduce
