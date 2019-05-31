@@ -170,9 +170,9 @@ Returns **[Object][140]**
 
 ### Parameters
 
--   `a` **any** 
+-   `x` **any** 
 
-Returns **[String][138]** 
+Returns **[String][138]** The argument casted to string.
 
 ## uniq
 
