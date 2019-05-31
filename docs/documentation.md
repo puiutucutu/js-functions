@@ -294,10 +294,10 @@ head :: [a] -> a
 
 ### Parameters
 
--   `x` **[Array][132]&lt;any>** 
+-   `x` **[Array][132]&lt;T>** 
     -   `x.0`  
 
-Returns **any** 
+Returns **T** 
 
 ## includes
 
