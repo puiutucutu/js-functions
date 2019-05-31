@@ -2365,7 +2365,7 @@ const pipe = Array.prototype.reduce.call(fns, (acc, f) => f(acc), x);</p>
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>reducer</span> <code class='quiet'>(function (accumulator: T, currentValue: U))</code>
+            <span class='code bold'>reducer</span> <code class='quiet'>(function (accumulator: T): function (currentValue: U))</code>
 	    
           </div>
           
@@ -2379,7 +2379,7 @@ const pipe = Array.prototype.reduce.call(fns, (acc, f) => f(acc), x);</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>function (accumulatorInitialValue: T): function (xs: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;U>): (T | any)</code>:
+      <code>function (accumulatorInitialValue: T): function (xs: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;U>): (T)</code>:
         
 
       
@@ -2388,6 +2388,18 @@ const pipe = Array.prototype.reduce.call(fns, (acc, f) => f(acc), x);</p>
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'>reduce
+  (<span class="hljs-function"><span class="hljs-params">acc</span> =&gt;</span> <span class="hljs-function"><span class="hljs-params">curr</span> =&gt;</span> acc + curr)
+  (<span class="hljs-number">0</span>)
+  ([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>])
+;
+
+<span class="hljs-comment">//=&gt; 10</span></pre>
+    
   
 
   
@@ -3150,7 +3162,7 @@ const pipe = Array.prototype.reduce.call(fns, (acc, f) => f(acc), x);</p>
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>function (o: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>:
+      <code>function (obj: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): (<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>:
         
 
       
@@ -3218,7 +3230,7 @@ omit ([<span class="hljs-string">"id"</span>, <span class="hljs-string">"brand"<
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>keys</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+            <span class='code bold'>keys</span> <code class='quiet'>((<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>> | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>))</code>
 	    
           </div>
           
@@ -3241,6 +3253,18 @@ omit ([<span class="hljs-string">"id"</span>, <span class="hljs-string">"brand"<
 
   
 
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> obj = {
+  <span class="hljs-attr">id</span>: <span class="hljs-number">123</span>,
+  <span class="hljs-attr">brand</span>: <span class="hljs-string">"bmw"</span>,
+  <span class="hljs-attr">model</span>: <span class="hljs-string">"7 Series"</span>
+};
+
+pick ([<span class="hljs-string">"id"</span>, <span class="hljs-string">"brand"</span>]) (obj); <span class="hljs-comment">//=&gt; { id: 123, brand: "bmw" }</span></pre>
+    
   
 
   
