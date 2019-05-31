@@ -4,8 +4,8 @@ import { includes } from "../includes";
 /**
  * uniq :: [a] -> [a]
  *
- * @param {T[]} xs
- * @return {T[]}
+ * @param {*[]} xs
+ * @return {*[]}
  * @example
  *
  * uniq ([1, 1, 1, 2, 3]); // => [1, 2, 3]
