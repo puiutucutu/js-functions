@@ -8,6 +8,16 @@ import { getKeys } from "./getKeys";
  *
  * @param {Array} keys
  * @return {function(o: Object): (Object)}
+ * @example
+ *
+ * const obj = {
+ *   id: 123,
+ *   brand: "bmw",
+ *   model: "7 Series"
+ * };
+ *
+ * omit (["id", "brand"]) (obj); //=> { model: "7 Series" }
+ *
  */
 const omit = keys => o =>
   reduce
