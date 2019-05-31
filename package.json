@@ -14,7 +14,7 @@
     "test:watch-unit": "nodemon --watch functional-tests -x \"npm run test:unit\"",
     "test:watch-functional": "nodemon --watch functional-tests -x \"npm run test:functional\"",
     "prettify": "prettier --write src/**/*.js",
-    "documentation": "npm run documentation:html & npm run documentation:markdown",
+    "documentation": "rimraf docs/* & npm run documentation:html & npm run documentation:markdown",
     "documentation:html": "./node_modules/.bin/documentation build ./src/index.js -f html -o ./docs/html",
     "documentation:markdown": "./node_modules/.bin/documentation build ./src/index.js -f md > ./docs/documentation.md"
   },
@@ -42,6 +42,7 @@
     "nodemon": "^1.19.0",
     "nyc": "^14.1.1",
     "prettier": "^1.17.0",
+    "rimraf": "^2.6.3",
     "rollup": "^1.12.4",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",
