@@ -1,7 +1,10 @@
 import { reduce } from "../list";
+import { createMap } from './createMap'
+
+const Map = createMap();
 
 /**
- * Returns an object with the supplied keys removed.
+ * Returns an object with the supplied keys.
  *
  * pick :: ([a]) -> ({a}) -> {a}
  *
@@ -21,7 +24,7 @@ import { reduce } from "../list";
 const pick = keys => obj =>
   reduce
     (acc => k => ({ ...acc, [k]: obj[k] }))
-    ({})
+    (Map)
     (keys)
 ;
 

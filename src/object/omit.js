@@ -1,8 +1,11 @@
 import { includes, reduce } from "../list";
 import { getKeys } from "./getKeys";
+import { createMap } from './createMap'
+
+const Map = createMap();
 
 /**
- * Returns an object without the supplied keys.
+ * Returns an object with the supplied keys removed.
  *
  * omit :: ([a]) -> ({a}) -> {a}
  *
@@ -26,7 +29,8 @@ const omit = keys => obj =>
       ? { ...acc }
       : { ...acc, [k]: obj[k] }
   )
-  ({})
-  (getKeys (obj));
+  (Map)
+  (getKeys (obj))
+;
 
 export { omit };
