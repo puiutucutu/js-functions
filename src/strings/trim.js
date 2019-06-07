@@ -1,4 +1,6 @@
 /**
+ * trim :: String -> String
+ *
  * @param {String} s
  * @return {String}
  */
