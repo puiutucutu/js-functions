@@ -15,3 +15,4 @@ export { splitByWhiteSpace } from "./splitByWhiteSpace";
 export { svgToBase64 } from "./svgToBase64";
 export { trim } from "./trim";
 export { trims } from "./trims";
+export { truncate } from "./truncate";
