@@ -1,8 +1,16 @@
 import { splitByWhiteSpace } from "./splitByWhiteSpace";
 import { join } from "./join";
-import { head, splitAt } from "../list";
+import { head, pipe, splitAt } from "../list";
 
 const truncate = numberOfWords => s =>
-  join (" ") (head( splitAt (numberOfWords) (splitByWhiteSpace(s))));
+  pipe
+  (
+    splitByWhiteSpace,
+    splitAt (numberOfWords),
+    head,
+    join (" ")
+  )
+  (s)
+;
 
 export { truncate };
