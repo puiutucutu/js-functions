@@ -104,42 +104,48 @@
     -   [Parameters][100]
 -   [joinWithNewLine][101]
     -   [Parameters][102]
--   [replace][103]
+-   [lowercase][103]
     -   [Parameters][104]
--   [removeCommas][105]
+-   [replace][105]
     -   [Parameters][106]
--   [removeFalseyStrings][107]
+-   [removeCommas][107]
     -   [Parameters][108]
--   [splitBy][109]
+-   [removeFalseyStrings][109]
     -   [Parameters][110]
--   [splitByComma][111]
+-   [search][111]
     -   [Parameters][112]
--   [splitByNewLines][113]
+-   [splitBy][113]
     -   [Parameters][114]
--   [splitByWhiteSpace][115]
+-   [splitByComma][115]
     -   [Parameters][116]
--   [svgToBase64][117]
+-   [splitByNewLines][117]
     -   [Parameters][118]
--   [trim][119]
+-   [splitByWhiteSpace][119]
     -   [Parameters][120]
--   [trims][121]
+-   [svgToBase64][121]
     -   [Parameters][122]
--   [hasOwnProperty][123]
+-   [trim][123]
     -   [Parameters][124]
--   [isArray][125]
+-   [trims][125]
     -   [Parameters][126]
--   [isEmptyObject][127]
+-   [truncate][127]
     -   [Parameters][128]
--   [isEmptySet][129]
+-   [hasOwnProperty][129]
     -   [Parameters][130]
--   [isEmptyString][131]
+-   [isArray][131]
     -   [Parameters][132]
--   [isNumeric][133]
+-   [isEmptyObject][133]
     -   [Parameters][134]
--   [isString][135]
+-   [isEmptySet][135]
     -   [Parameters][136]
--   [isTimeValid][137]
+-   [isEmptyString][137]
     -   [Parameters][138]
+-   [isNumeric][139]
+    -   [Parameters][140]
+-   [isString][141]
+    -   [Parameters][142]
+-   [isTimeValid][143]
+    -   [Parameters][144]
 
 ## countUniques
 
@@ -157,7 +163,7 @@ Example
 
 ### Parameters
 
--   `xs` **([Array][139]&lt;[String][140]> | [Array][139]&lt;[Number][141]>)** 
+-   `xs` **([Array][145]&lt;[String][146]> | [Array][145]&lt;[Number][147]>)** 
 
 ### Examples
 
@@ -166,7 +172,7 @@ countUniques (["bmw", "mercedes", "bmw", "volkswagen", "bmw", "porsche"]));
 //=> { bmw: 3, mercedes: 1, volkswagen: 1, porsche: 1 }
 ```
 
-Returns **[Object][142]** 
+Returns **[Object][148]** 
 
 ## toString
 
@@ -174,7 +180,7 @@ Returns **[Object][142]**
 
 -   `x` **any** 
 
-Returns **[String][140]** The argument casted to string.
+Returns **[String][146]** The argument casted to string.
 
 ## uniq
 
@@ -182,7 +188,7 @@ uniq :: [a] -> [a]
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;any>** 
+-   `xs` **[Array][145]&lt;any>** 
 
 ### Examples
 
@@ -190,7 +196,7 @@ uniq :: [a] -> [a]
 uniq ([1, 1, 1, 2, 3]); // => [1, 2, 3]
 ```
 
-Returns **[Array][139]&lt;any>** 
+Returns **[Array][145]&lt;any>** 
 
 ## removeItem
 
@@ -198,23 +204,23 @@ Immutably removes an element from an array.
 
 ### Parameters
 
--   `y` **([String][140] \| [Number][141])** 
+-   `y` **([String][146] \| [Number][147])** 
 
-Returns **function ([Array][139]&lt;any>): \[]** 
-
-## filter
-
-### Parameters
-
--   `predicate` **function (T): [boolean][143]** 
-
-Returns **function ([Array][139]&lt;T>): [Array][139]&lt;T>** 
+Returns **function ([Array][145]&lt;any>): \[]** 
 
 ## filter
 
 ### Parameters
 
--   `predicate` **function (any): [Boolean][143]** 
+-   `predicate` **function (T): [boolean][149]** 
+
+Returns **function ([Array][145]&lt;T>): [Array][145]&lt;T>** 
+
+## filter
+
+### Parameters
+
+-   `predicate` **function (any): [Boolean][149]** 
 
 Returns **function (\[]): \[]** 
 
@@ -224,7 +230,7 @@ Returns **function (\[]): \[]**
 
 -   `mapper` **function (any): any** 
 
-Returns **function (x: [Array][139]&lt;any>): [Array][139]&lt;any>** 
+Returns **function (x: [Array][145]&lt;any>): [Array][145]&lt;any>** 
 
 ## map
 
@@ -232,9 +238,9 @@ map :: (a -> b) -> [a] -> [b]
 
 ### Parameters
 
--   `f` **function (a): b** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax][144]
+-   `f` **function (a): b** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax][150]
 
-Returns **function (xs: [Array][139]&lt;a>): [Array][139]&lt;b>** 
+Returns **function (xs: [Array][145]&lt;a>): [Array][145]&lt;b>** 
 
 ## getObjectType
 
@@ -242,7 +248,7 @@ Returns **function (xs: [Array][139]&lt;a>): [Array][139]&lt;b>**
 
 -   `reducer` **function (accumulator: T, currentValue: U)** 
 
-Returns **function (initialValue: T): function (items: [Array][139]&lt;U>): (T | any)** 
+Returns **function (initialValue: T): function (items: [Array][145]&lt;U>): (T | any)** 
 
 ## getObjectType
 
@@ -250,7 +256,7 @@ Returns **function (initialValue: T): function (items: [Array][139]&lt;U>): (T |
 
 -   `x` **any** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## apply
 
@@ -258,7 +264,7 @@ Applies some function `f` over some argument `x`.
 
 ### Parameters
 
--   `f` **[Function][145]** 
+-   `f` **[Function][151]** 
 
 Returns **function (x: any): T** 
 
@@ -270,7 +276,7 @@ applyMany :: ((a -> b), (b -> c), ...(y -> z)) -> [a] -> [z]
 
 ### Parameters
 
--   `fns` **...[Function][145]** 
+-   `fns` **...[Function][151]** 
 
 ## clone
 
@@ -278,9 +284,9 @@ clone :: [a] -> [a]
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;any>** 
+-   `xs` **[Array][145]&lt;any>** 
 
-Returns **[Array][139]&lt;any>** 
+Returns **[Array][145]&lt;any>** 
 
 ## compose
 
@@ -288,7 +294,7 @@ compose :: (b -> c) -> (a -> b) -> a -> c
 
 ### Parameters
 
--   `f` **[Function][145]** 
+-   `f` **[Function][151]** 
 
 ## composes
 
@@ -296,9 +302,9 @@ composes :: ((z -> y), (x -> y), ... (b -> a)) -> z -> a
 
 ### Parameters
 
--   `fns` **...[Function][145]** Each fn must have an arity of 1
+-   `fns` **...[Function][151]** Each fn must have an arity of 1
 
-Returns **[Function][145]** 
+Returns **[Function][151]** 
 
 ## concat
 
@@ -306,9 +312,9 @@ concat :: [a] -> a -> [a]
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;T>** 
+-   `xs` **[Array][145]&lt;T>** 
 
-Returns **function (T): [Array][139]&lt;T>** 
+Returns **function (T): [Array][145]&lt;T>** 
 
 ## flatMap
 
@@ -316,7 +322,7 @@ Returns **function (T): [Array][139]&lt;T>**
 
 -   `f` **function (any): any** 
 
-Returns **function ([Array][139]&lt;any>): [Array][139]&lt;any>** 
+Returns **function ([Array][145]&lt;any>): [Array][145]&lt;any>** 
 
 ## flattener
 
@@ -325,9 +331,9 @@ with an arity of one.
 
 ### Parameters
 
--   `xs` **[Array][139]** 
+-   `xs` **[Array][145]** 
 
-Returns **[Array][139]** The array of arrays reduced to a 1-d array
+Returns **[Array][145]** The array of arrays reduced to a 1-d array
 
 ## foldl
 
@@ -337,7 +343,7 @@ head :: [a] -> a
 
 ### Parameters
 
--   `x` **[Array][139]&lt;T>** 
+-   `x` **[Array][145]&lt;T>** 
     -   `x.0`  
 
 Returns **T** 
@@ -350,23 +356,23 @@ includes :: a -> [a] -> Boolean
 
 -   `x` **any** 
 
-Returns **function (any): [Boolean][143]** 
+Returns **function (any): [Boolean][149]** 
 
 ## length
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;any>** 
+-   `xs` **[Array][145]&lt;any>** 
 
-Returns **[Number][141]** 
+Returns **[Number][147]** 
 
 ## lengthRecursive
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;any>** 
+-   `xs` **[Array][145]&lt;any>** 
 
-Returns **[Number][141]** 
+Returns **[Number][147]** 
 
 ## mapWithNativeCallback
 
@@ -374,9 +380,9 @@ map :: (a -> b) -> [a] -> [b]
 
 ### Parameters
 
--   `f` **function (a, index: [Number][141], array: [Array][139]&lt;any>): b** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax][144]
+-   `f` **function (a, index: [Number][147], array: [Array][145]&lt;any>): b** [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax][150]
 
-Returns **function (xs: [Array][139]&lt;a>): [Array][139]&lt;b>** 
+Returns **function (xs: [Array][145]&lt;a>): [Array][145]&lt;b>** 
 
 ## pipe
 
@@ -389,7 +395,7 @@ Same implementation as using `Array.prototype.reduce`:
 
 ### Parameters
 
--   `fns` **...[Function][145]** Each fn must have an arity of 1
+-   `fns` **...[Function][151]** Each fn must have an arity of 1
 
 Returns **function (U): T** Some value `x` reduced over each fn of fns
 
@@ -413,7 +419,7 @@ reduce
 //=> 10
 ```
 
-Returns **function (accumulatorInitialValue: T): function (xs: [Array][139]&lt;U>): (T | any)** 
+Returns **function (accumulatorInitialValue: T): function (xs: [Array][145]&lt;U>): (T | any)** 
 
 ## reduceRight
 
@@ -423,7 +429,7 @@ reduce :: ((a -> b) -> a) -> a -> [b] -> a
 
 -   `reducer` **function (accumulatorInitialValue: T, currentValue: U)** 
 
-Returns **function (initialValue: T): function (xs: [Array][139]&lt;U>): (T | any)** 
+Returns **function (initialValue: T): function (xs: [Array][145]&lt;U>): (T | any)** 
 
 ## reverse
 
@@ -431,27 +437,27 @@ reverse :: [a] -> [a]
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;any>** 
+-   `xs` **[Array][145]&lt;any>** 
 
-Returns **[Array][139]&lt;any>** 
+Returns **[Array][145]&lt;any>** 
 
 ## splitAt
 
--   **See: [https://stackoverflow.com/a/38757490][146]**
+-   **See: [https://stackoverflow.com/a/38757490][152]**
 
 splitAt :: Number -> [A] -> [A]
 
 ### Parameters
 
--   `k` **[Number][141]** 
+-   `k` **[Number][147]** 
 
 ## sum
 
 ### Parameters
 
--   `xs` **[Array][139]&lt;[Number][141]>** 
+-   `xs` **[Array][145]&lt;[Number][147]>** 
 
-Returns **[number][141]** 
+Returns **[number][147]** 
 
 ## tail
 
@@ -459,7 +465,7 @@ tail :: [a] -> [a]
 
 ### Parameters
 
--   `$0` **[Array][139]** 
+-   `$0` **[Array][145]** 
     -   `$0.0`  
     -   `$0.xs` **...any** 
 
@@ -469,7 +475,7 @@ Returns **any**
 
 ### Parameters
 
--   `f` **[Function][145]** 
+-   `f` **[Function][151]** 
 
 Returns **function (any, any): any** 
 
@@ -477,7 +483,7 @@ Returns **function (any, any): any**
 
 ### Parameters
 
--   `f` **[Function][145]** 
+-   `f` **[Function][151]** 
 
 Returns **function (any, any, any): any** 
 
@@ -485,9 +491,9 @@ Returns **function (any, any, any): any**
 
 ### Parameters
 
--   `propKeyName` **[String][140]** 
+-   `propKeyName` **[String][146]** 
 
-Returns **function ([Array][139]&lt;any>): {k: [string][140], v: any}** 
+Returns **function ([Array][145]&lt;any>): {k: [string][146], v: any}** 
 
 ## createMap
 
@@ -497,25 +503,25 @@ Returns **function ([Array][139]&lt;any>): {k: [string][140], v: any}**
 Object.getPrototypeOf(Object.create(null)) === null; //=> true
 ```
 
-Returns **[Object][142]** An object without the prototype chain baggage.
+Returns **[Object][148]** An object without the prototype chain baggage.
 
 ## getKeys
 
 ### Parameters
 
--   `obj` **[Object][142]** 
+-   `obj` **[Object][148]** 
 
-Returns **[Array][139]&lt;[String][140]>** 
+Returns **[Array][145]&lt;[String][146]>** 
 
 ## omit
 
-Returns an object without the supplied keys.
+Returns an object with the supplied keys removed.
 
 omit :: ([a]) -> ({a}) -> {a}
 
 ### Parameters
 
--   `keys` **([Array][139]&lt;[String][140]> | [Array][139]&lt;[Number][141]>)** 
+-   `keys` **([Array][145]&lt;[String][146]> | [Array][145]&lt;[Number][147]>)** 
 
 ### Examples
 
@@ -529,17 +535,17 @@ const obj = {
 omit (["id", "brand"]) (obj); //=> { model: "7 Series" }
 ```
 
-Returns **function (obj: [Object][142]): ([Object][142])** 
+Returns **function (obj: [Object][148]): ([Object][148])** 
 
 ## pick
 
-Returns an object with the supplied keys removed.
+Returns an object with the supplied keys.
 
 pick :: ([a]) -> ({a}) -> {a}
 
 ### Parameters
 
--   `keys` **([Array][139]&lt;[String][140]> | [Array][139]&lt;[Number][141]>)** 
+-   `keys` **([Array][145]&lt;[String][146]> | [Array][145]&lt;[Number][147]>)** 
 
 ### Examples
 
@@ -553,7 +559,7 @@ const obj = {
 pick (["id", "brand"]) (obj); //=> { id: 123, brand: "bmw" }
 ```
 
-Returns **function (obj: [Object][142]): ([Object][142])** 
+Returns **function (obj: [Object][148]): ([Object][148])** 
 
 ## removeKeyFromObject
 
@@ -564,7 +570,7 @@ Note that this function only works on an object nested one level deep.
 
 ### Parameters
 
--   `key` **[String][140]** 
+-   `key` **[String][146]** 
 
 Returns **function ({}): {}** Object with all of the original properties
 except the property denoted by `key`.
@@ -576,7 +582,7 @@ the `id` object property as the key in &lt;k,v>.
 
 ### Parameters
 
--   `items` **[Array][139]&lt;[Object][142]>** 
+-   `items` **[Array][145]&lt;[Object][148]>** 
 
 Returns **{k: any, v: any}** 
 
@@ -587,9 +593,9 @@ supplied key name.
 
 ### Parameters
 
--   `key` **[String][140]** 
+-   `key` **[String][146]** 
 
-Returns **function ([Array][139]&lt;any>): {}** 
+Returns **function ([Array][145]&lt;any>): {}** 
 
 ## identity
 
@@ -603,7 +609,7 @@ Returns **T**
 
 ### Parameters
 
--   `f` **[function][145]** 
+-   `f` **[function][151]** 
 
 Returns **function (...\[any]): any** 
 
@@ -611,17 +617,17 @@ Returns **function (...\[any]): any**
 
 ### Parameters
 
--   `x` **[String][140]** 
+-   `x` **[String][146]** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## collapseToSingleSpace
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## collapseWhitespace
 
@@ -629,31 +635,41 @@ Collapses whitespace characters, including new lines.
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## join
 
 ### Parameters
 
--   `delimiter` **([String][140] \| [RegExp][147])** 
+-   `delimiter` **([String][146] \| [RegExp][153])** 
 
 ## joinWithComma
 
 ### Parameters
 
--   `n` **([Array][139]&lt;[String][140]> | [Array][139]&lt;[Number][141]>)** 
+-   `n` **([Array][145]&lt;[String][146]> | [Array][145]&lt;[Number][147]>)** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## joinWithNewLine
 
 ### Parameters
 
--   `n` **([Array][139]&lt;[String][140]> | [Array][139]&lt;[Number][141]>)** 
+-   `n` **([Array][145]&lt;[String][146]> | [Array][145]&lt;[Number][147]>)** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
+
+## lowercase
+
+lowercase :: String -> String
+
+### Parameters
+
+-   `s` **[String][146]** 
+
+Returns **[String][146]** 
 
 ## replace
 
@@ -661,25 +677,35 @@ replace :: (a) -> (a) -> (a) -> a
 
 ### Parameters
 
--   `searchValue` **([String][140] \| [RegExp][147])** 
+-   `searchValue` **([String][146] \| [RegExp][153])** 
 
-Returns **function (replaceValue: [string][140]): function (target: [string][140]): [string][140]** 
+Returns **function (replaceValue: [string][146]): function (target: [string][146]): [string][146]** 
 
 ## removeCommas
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## removeFalseyStrings
 
 ### Parameters
 
--   `n` **[Array][139]&lt;[String][140]>** 
+-   `n` **[Array][145]&lt;[String][146]>** 
 
-Returns **[Array][139]&lt;T>** 
+Returns **[Array][145]&lt;T>** 
+
+## search
+
+search :: String -> String -> Bool
+
+### Parameters
+
+-   `needle` **[String][146]** 
+
+Returns **function (haystack: [String][146]): [Boolean][149]** 
 
 ## splitBy
 
@@ -687,66 +713,78 @@ Abstract generic text splitting function.
 
 ### Parameters
 
--   `delimiter` **([String][140] \| [RegExp][147])** 
+-   `delimiter` **([String][146] \| [RegExp][153])** 
 
-Returns **function (s: [String][140]): [Array][139]&lt;[String][140]>** 
+Returns **function (s: [String][146]): [Array][145]&lt;[String][146]>** 
 
 ## splitByComma
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[Array][139]&lt;[String][140]>** 
+Returns **[Array][145]&lt;[String][146]>** 
 
 ## splitByNewLines
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[Array][139]&lt;[String][140]>** 
+Returns **[Array][145]&lt;[String][146]>** 
 
 ## splitByWhiteSpace
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[Array][139]&lt;[String][140]>** 
+Returns **[Array][145]&lt;[String][146]>** 
 
 ## svgToBase64
 
 ### Parameters
 
--   `svg` **[String][140]** String representation of an svg
+-   `svg` **[String][146]** String representation of an svg
 
-Returns **[String][140]** Base64 encoding of an svg
+Returns **[String][146]** Base64 encoding of an svg
 
 ## trim
 
+trim :: String -> String
+
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[String][140]** 
+Returns **[String][146]** 
 
 ## trims
 
 ### Parameters
 
--   `s` **[Array][139]&lt;[String][140]>** 
+-   `s` **[Array][145]&lt;[String][146]>** 
 
-Returns **[Array][139]&lt;[String][140]>** 
+Returns **[Array][145]&lt;[String][146]>** 
+
+## truncate
+
+splitAt :: Number -> String -> String
+
+### Parameters
+
+-   `numberOfWords` **[Number][147]** 
+
+Returns **function (s: [String][146]): [String][146]** 
 
 ## hasOwnProperty
 
 ### Parameters
 
--   `obj` **[Object][142]** 
--   `propName` **[String][140]** 
+-   `obj` **[Object][148]** 
+-   `propName` **[String][146]** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isArray
 
@@ -754,31 +792,31 @@ Returns **[Boolean][143]**
 
 -   `arr` **any** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isEmptyObject
 
 ### Parameters
 
--   `obj` **[Object][142]** 
+-   `obj` **[Object][148]** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isEmptySet
 
 ### Parameters
 
--   `set` **[Set][148]** 
+-   `set` **[Set][154]** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isEmptyString
 
 ### Parameters
 
--   `s` **[String][140]** 
+-   `s` **[String][146]** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isNumeric
 
@@ -786,7 +824,7 @@ Returns **[Boolean][143]**
 
 -   `x` **any** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isString
 
@@ -794,7 +832,7 @@ Returns **[Boolean][143]**
 
 -   `s` **any** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 ## isTimeValid
 
@@ -802,9 +840,9 @@ Strict time validation, allowing only HH:MM.
 
 ### Parameters
 
--   `t` **[String][140]** 
+-   `t` **[String][146]** 
 
-Returns **[Boolean][143]** 
+Returns **[Boolean][149]** 
 
 [1]: #countuniques
 
@@ -1010,94 +1048,106 @@ Returns **[Boolean][143]**
 
 [102]: #parameters-46
 
-[103]: #replace
+[103]: #lowercase
 
 [104]: #parameters-47
 
-[105]: #removecommas
+[105]: #replace
 
 [106]: #parameters-48
 
-[107]: #removefalseystrings
+[107]: #removecommas
 
 [108]: #parameters-49
 
-[109]: #splitby
+[109]: #removefalseystrings
 
 [110]: #parameters-50
 
-[111]: #splitbycomma
+[111]: #search
 
 [112]: #parameters-51
 
-[113]: #splitbynewlines
+[113]: #splitby
 
 [114]: #parameters-52
 
-[115]: #splitbywhitespace
+[115]: #splitbycomma
 
 [116]: #parameters-53
 
-[117]: #svgtobase64
+[117]: #splitbynewlines
 
 [118]: #parameters-54
 
-[119]: #trim
+[119]: #splitbywhitespace
 
 [120]: #parameters-55
 
-[121]: #trims
+[121]: #svgtobase64
 
 [122]: #parameters-56
 
-[123]: #hasownproperty
+[123]: #trim
 
 [124]: #parameters-57
 
-[125]: #isarray
+[125]: #trims
 
 [126]: #parameters-58
 
-[127]: #isemptyobject
+[127]: #truncate
 
 [128]: #parameters-59
 
-[129]: #isemptyset
+[129]: #hasownproperty
 
 [130]: #parameters-60
 
-[131]: #isemptystring
+[131]: #isarray
 
 [132]: #parameters-61
 
-[133]: #isnumeric
+[133]: #isemptyobject
 
 [134]: #parameters-62
 
-[135]: #isstring
+[135]: #isemptyset
 
 [136]: #parameters-63
 
-[137]: #istimevalid
+[137]: #isemptystring
 
 [138]: #parameters-64
 
-[139]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[139]: #isnumeric
 
-[140]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[140]: #parameters-65
 
-[141]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[141]: #isstring
 
-[142]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[142]: #parameters-66
 
-[143]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[143]: #istimevalid
 
-[144]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax
+[144]: #parameters-67
 
-[145]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[145]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[146]: https://stackoverflow.com/a/38757490
+[146]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
-[147]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+[147]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[148]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set
+[148]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[149]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[150]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map#Syntax
+
+[151]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[152]: https://stackoverflow.com/a/38757490
+
+[153]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+[154]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set

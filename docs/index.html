@@ -516,6 +516,16 @@
               
                 
                 <li><a
+                  href='#lowercase'
+                  class="">
+                  lowercase
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#replace'
                   class="">
                   replace
@@ -539,6 +549,16 @@
                   href='#removefalseystrings'
                   class="">
                   removeFalseyStrings
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#search'
+                  class="">
+                  search
                   
                 </a>
                 
@@ -609,6 +629,16 @@
                   href='#trims'
                   class="">
                   trims
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#truncate'
+                  class="">
+                  truncate
                   
                 </a>
                 
@@ -3231,7 +3261,7 @@ const pipe = Array.prototype.reduce.call(fns, (acc, f) => f(acc), x);</p>
   </div>
   
 
-  <p>Returns an object without the supplied keys.</p>
+  <p>Returns an object with the supplied keys removed.</p>
 <p>omit :: ([a]) -> ({a}) -> {a}</p>
 
     <div class='pre p1 fill-light mt0'>omit</div>
@@ -3313,7 +3343,7 @@ omit ([<span class="hljs-string">"id"</span>, <span class="hljs-string">"brand"<
   </div>
   
 
-  <p>Returns an object with the supplied keys removed.</p>
+  <p>Returns an object with the supplied keys.</p>
 <p>pick :: ([a]) -> ({a}) -> {a}</p>
 
     <div class='pre p1 fill-light mt0'>pick</div>
@@ -4138,6 +4168,75 @@ supplied key name.</p>
   
   <div class='clearfix'>
     
+    <h3 class='fl m0' id='lowercase'>
+      lowercase
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>lowercase :: String -> String</p>
+
+    <div class='pre p1 fill-light mt0'>lowercase</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>s</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
     <h3 class='fl m0' id='replace'>
       replace
     </h3>
@@ -4316,6 +4415,75 @@ supplied key name.</p>
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;T></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='search'>
+      search
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>search :: String -> String -> Bool</p>
+
+    <div class='pre p1 fill-light mt0'>search</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>needle</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>function (haystack: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code>:
         
 
       
@@ -4693,7 +4861,8 @@ supplied key name.</p>
   </div>
   
 
-  
+  <p>trim :: String -> String</p>
+
     <div class='pre p1 fill-light mt0'>trim</div>
   
   
@@ -4794,6 +4963,75 @@ supplied key name.</p>
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='truncate'>
+      truncate
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>splitAt :: Number -> String -> String</p>
+
+    <div class='pre p1 fill-light mt0'>truncate</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>numberOfWords</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>function (s: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
         
 
       
