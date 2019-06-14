@@ -2,6 +2,10 @@
 
 Just a place to store functions so I don't forget.
 
+## Docs
+
+https://puiutucutu.github.io/js-functions/
+
 ## Native Implementations
 
 Using auto curried wrappers over native array functions internally when using
