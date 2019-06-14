@@ -4,9 +4,9 @@ import { map } from "../list/map";
 /**
  * trims :: [String] -> [String]
  *
- * @param {String[]} s
+ * @param {String[]} xs
  * @return {String[]}
  */
-const trims = s => map (trim) (s);
+const trims = xs => map (trim) (xs);
 
 export { trims };
